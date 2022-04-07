@@ -348,3 +348,10 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+Src/InterstellarPilotEditor162/Library/
+Src/InterstellarPilotEditor162/Temp/
+Src/InterstellarPilotEditor162/UserSettings/
+Src/InterstellarPilotEditor162/*.csproj
+Src/InterstellarPilotEditor162/*.sln
+.vsconfig

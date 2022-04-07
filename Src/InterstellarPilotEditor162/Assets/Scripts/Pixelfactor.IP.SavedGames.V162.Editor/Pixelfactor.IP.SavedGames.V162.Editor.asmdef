@@ -1,0 +1,14 @@
+{
+    "name": "Pixelfactor.IP.SavedGames.V162.Editor",
+    "rootNamespace": "Pixelfactor.IP.SavedGames.V162.Editor",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

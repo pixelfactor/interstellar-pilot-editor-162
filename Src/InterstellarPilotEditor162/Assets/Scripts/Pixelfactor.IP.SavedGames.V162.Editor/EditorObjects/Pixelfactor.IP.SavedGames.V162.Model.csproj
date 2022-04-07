@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <Copyright>Pixelfactor Ltd.</Copyright>
+    <Description>Model of the v1.6.2 save file for Interstellar Pilot.</Description>
+    <PackageProjectUrl>https://github.com/pixelfactor/Pixelfactor.IP.SavedGames.V162.Model</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/pixelfactor/Pixelfactor.IP.SavedGames.V162.Model</RepositoryUrl>
+    <Company>Pixelfactor Ltd.</Company>
+    <Authors>Pixelfactor Ltd.</Authors>
+    <Product>Interstellar Pilot Save File V1.6.2 Model</Product>
+	<VersionPrefix>1.0.5</VersionPrefix>
+  </PropertyGroup>
+</Project>
