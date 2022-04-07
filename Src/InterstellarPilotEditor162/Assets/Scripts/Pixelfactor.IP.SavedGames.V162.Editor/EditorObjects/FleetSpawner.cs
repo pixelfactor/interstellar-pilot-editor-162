@@ -35,7 +35,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
         /// <summary>
         /// Any fleet that has already been spawned
         /// </summary>
-        public Fleet SpawnedFleet { get; set; }
+        public EditorFleet SpawnedFleet { get; set; }
         /// <summary>
         /// Possible ship types that will be spawned
         /// </summary>

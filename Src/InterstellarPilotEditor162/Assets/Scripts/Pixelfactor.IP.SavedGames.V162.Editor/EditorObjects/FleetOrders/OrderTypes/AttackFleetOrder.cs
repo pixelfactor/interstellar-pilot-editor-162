@@ -2,7 +2,7 @@
 {
     public class AttackFleetOrder : FleetOrder
     {
-        public Fleet Target { get; set; }
+        public EditorFleet Target { get; set; }
         public float AttackPriority { get; set; }
     }
 }

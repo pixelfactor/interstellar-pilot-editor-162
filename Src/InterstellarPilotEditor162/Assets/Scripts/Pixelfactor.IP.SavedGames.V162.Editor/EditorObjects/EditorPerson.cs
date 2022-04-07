@@ -6,7 +6,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
     {
         public bool IsMale = true;
 
-        public int Id = 0;
+        public int Id = -1;
 
         /// <summary>
         /// Use this OR the generated name ids

@@ -2,6 +2,6 @@
 {
     public class ActiveAttackFleetOrder : ActiveFleetOrder
     {
-        public Fleet TargetFleet { get; set; }
+        public EditorFleet TargetFleet { get; set; }
     }
 }

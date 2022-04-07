@@ -66,22 +66,22 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
             Debug.Log("Finished auto-assigned ids");
         }
 
-        private static int NewUnitId(IEnumerable<EditorUnit> units)
+        public static int NewUnitId(IEnumerable<EditorUnit> units)
         {
             return Mathf.Max(BASE_ID, units.Select(e => e.Id).DefaultIfEmpty().Max()) + 1;
         }
 
-        private static int NewFactionId(IEnumerable<EditorFaction> factions)
+        public static int NewFactionId(IEnumerable<EditorFaction> factions)
         {
             return Mathf.Max(BASE_ID, factions.Select(e => e.Id).DefaultIfEmpty().Max()) + 1;
         }
 
-        private static int NewSectorId(IEnumerable<EditorSector> sectors)
+        public static int NewSectorId(IEnumerable<EditorSector> sectors)
         {
             return Mathf.Max(BASE_ID, sectors.Select(e => e.Id).DefaultIfEmpty().Max()) + 1;
         }
 
-        private static int NewPersonId(IEnumerable<EditorPerson> people)
+        public static int NewPersonId(IEnumerable<EditorPerson> people)
         {
             return Mathf.Max(BASE_ID, people.Select(e => e.Id).DefaultIfEmpty().Max()) + 1;
         }

@@ -6,6 +6,6 @@
     public class PlayerUnitFleetMap
     {
         public EditorUnit Unit { get; set; }
-        public Fleet Fleet { get; set; }
+        public EditorFleet Fleet { get; set; }
     }
 }

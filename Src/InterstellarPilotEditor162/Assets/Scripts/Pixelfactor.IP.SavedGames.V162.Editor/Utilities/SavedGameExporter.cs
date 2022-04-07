@@ -22,7 +22,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
             ExportPeople(editorSavedGame, savedGame);
             ExportPlayer(editorSavedGame, savedGame);
             ExportScenarioData(editorSavedGame, savedGame);
-
+            AutoCreateFleetsWhereNeeded(editorSavedGame, savedGame);
             ExportHeader(editorSavedGame, savedGame);
 
             return savedGame;
@@ -223,12 +223,19 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                     Kills = editorPerson.Kills,
                 };
 
+                if (string.IsNullOrEmpty(person.CustomName))
+                {
+                    person.GeneratedFirstNameId = -1;
+                    person.GeneratedLastNameId = -1;
+                }
+
+                // Link any pilot
                 var editorUnit = editorPerson.GetComponentInParent<EditorUnit>();
                 if (editorUnit != null)
                 {
                     person.CurrentUnit = savedGame.Units.FirstOrDefault(e => e.Id == editorUnit.Id);
 
-                    var editorComponentUnit = editorUnit.GetComponent<EditorComponentUnitData>();
+                    var editorComponentUnit = editorUnit.GetComponentInChildren<EditorComponentUnitData>();
                     if (editorComponentUnit != null)
                     {
                         person.CurrentUnit.ComponentUnitData.People.Add(person);
@@ -243,9 +250,51 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                             Debug.LogWarning("Person set to be a pilot of a unit that has a different faction. Unit faction will be changed to match pilot", editorPerson);
                         }
                     }
+
+                }
+
+                // Init any Npc pilot
+                var editorNpcPilot = editorPerson.GetComponent<EditorNpcPilot>();
+                if (editorNpcPilot != null)
+                {
+                    person.NpcPilot = new NpcPilot
+                    {
+                        AllowUseCloak = editorNpcPilot.AllowUseCloak,
+                        DestroyWhenNotPilotting = true,
+                        DestroyWhenNoUnit = true,
+                        Person = person
+                    };
                 }
 
                 savedGame.People.Add(person);
+            }
+        }
+
+        /// <summary>
+        /// There's a bug in the engine where, if the npc pilot doesn't have a fleet, the faction won't create one for it. So the npc will be left idle
+        /// So create one automatically here
+        /// </summary>
+        /// <param name="editorSavedGame"></param>
+        /// <param name="savedGame"></param>
+        private static void AutoCreateFleetsWhereNeeded(EditorSavedGame editorSavedGame, SavedGame savedGame)
+        {
+            foreach (var person in savedGame.People)
+            {
+                if (person.IsPilot && person.NpcPilot != null && person.NpcPilot.Fleet == null)
+                {
+                    person.NpcPilot.Fleet = new Fleet
+                    {
+                        Faction = person.Faction,
+                        Id = savedGame.Fleets.Select(e => e.Id).DefaultIfEmpty().Max() + 1,
+                        Position = person.CurrentUnit.Position,
+                        Sector = person.CurrentUnit.Sector,
+                        Orders = new Model.FleetOrders.FleetOrderCollection(), // This collection will be auto-init by a newer version of the "model". For now we must do it.
+                        IsActive = true, // Again, should be autoset by model
+                    };
+
+                    savedGame.Fleets.Add(person.NpcPilot.Fleet);
+                    person.NpcPilot.Fleet.Npcs.Add(person.NpcPilot);
+                }
             }
         }
 
@@ -270,6 +319,12 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                     {
                         // Get position local to sector (allowing nested units in the heirachy)
                         var localSectorPosition = editorUnit.transform.position - editorSector.transform.position;
+
+                        // Constrain Y
+                        if (unit.Class.ToString().StartsWith("Ship") || unit.Class.ToString().StartsWith("Station"))
+                        {
+                            localSectorPosition.y = 0.0f;
+                        }
 
                         // HACK: Planets are draw a bit weirdly in the engine with a different camera. Scale down the location position
                         if (unit.Class.ToString().Contains("Planet"))

@@ -675,7 +675,7 @@ PrefabInstance:
     - target: {fileID: 2694981885851197159, guid: eedd89d70a31f84439354ade36e52c0d, type: 3}
       propertyPath: Pilot
       value: 
-      objectReference: {fileID: 439254220}
+      objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: eedd89d70a31f84439354ade36e52c0d, type: 3}
       propertyPath: Faction
       value: 
@@ -1090,55 +1090,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5505798914149961743, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
   m_PrefabInstance: {fileID: 374713085}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &439254218
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 439254219}
-  - component: {fileID: 439254220}
-  m_Layer: 0
-  m_Name: NpcPilot_TJ
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &439254219
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439254218}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 244421316}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &439254220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439254218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7964496d6dfa5a545936c157f91f4b24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsMale: 1
-  Id: 0
-  CustomName: TJ
-  Faction: {fileID: 1272879044}
-  Kills: 0
 --- !u!1001 &473645277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5650,6 +5601,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+--- !u!1001 &2009688726
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 244421316}
+    m_Modifications:
+    - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585188579328289001, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: Faction
+      value: 
+      objectReference: {fileID: 1272879044}
+    - target: {fileID: 4585188579328289001, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: CustomName
+      value: TJ
+      objectReference: {fileID: 0}
+    - target: {fileID: 6552643693189696545, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: m_Name
+      value: NpcPilot_TJ
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
 --- !u!1001 &2044000488
 PrefabInstance:
   m_ObjectHideFlags: 0

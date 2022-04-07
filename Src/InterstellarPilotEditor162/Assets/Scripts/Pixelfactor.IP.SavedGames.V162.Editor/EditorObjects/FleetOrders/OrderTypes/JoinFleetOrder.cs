@@ -2,6 +2,6 @@
 {
     public class JoinFleetOrder : FleetOrder
     {
-        public Fleet TargetFleet { get; set; }
+        public EditorFleet TargetFleet { get; set; }
     }
 }

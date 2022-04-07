@@ -10,7 +10,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
 
         public EditorUnit TargetUnit { get; set; }
 
-        public Fleet TargetFleet { get; set; }
+        public EditorFleet TargetFleet { get; set; }
 
         /// <summary>
         /// True when the order had a valid target unit or target fleet
