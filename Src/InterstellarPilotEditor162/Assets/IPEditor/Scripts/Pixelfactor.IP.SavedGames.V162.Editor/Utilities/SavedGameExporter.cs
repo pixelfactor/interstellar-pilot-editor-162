@@ -136,11 +136,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
         {
             savedGame.ScenarioData = new Model.ScenarioData
             {
-                FactionSpawner = new Model.FactionSpawner
-                {
-                    // The engine save file doesn't have a setting to disable faction spawning but the following will accomplish it
-                    NextUpdate = editorSavedGame.FactionSpawningEnabled ? 0d : double.MaxValue
-                },
+
                 HasRandomEvents = editorSavedGame.RandomEventsEnabled,
                 NextRandomEventTime = 240d
             };
