@@ -1,4 +1,5 @@
 ﻿using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects;
+using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects.FleetOrders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -74,7 +75,22 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                 }
             }
 
+            var orders = editorSavedGame.GetComponentsInChildren<EditorFleetOrderCommon>();
+            foreach (var order in orders)
+            {
+                if (order.Id < 0)
+                {
+                    order.Id = NewOrderId(orders);
+                    EditorUtility.SetDirty(order);
+                }
+            }
+
             Debug.Log("Finished auto-assigned ids");
+        }
+
+        private static int NewOrderId(IEnumerable<EditorFleetOrderCommon> orders)
+        {
+            return Mathf.Max(BASE_ID, orders.Select(e => e.Id).DefaultIfEmpty().Max()) + 1;
         }
 
         private static int NewFleetId(IEnumerable<EditorFleet> fleets)

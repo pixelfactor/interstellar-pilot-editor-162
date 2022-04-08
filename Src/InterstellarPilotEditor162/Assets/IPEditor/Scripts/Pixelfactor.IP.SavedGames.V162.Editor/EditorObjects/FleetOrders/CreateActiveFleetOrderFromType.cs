@@ -1,4 +1,5 @@
 ﻿using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects.FleetOrders.ActiveOrderTypes;
+using Pixelfactor.IP.SavedGames.V162.Model.FleetOrders;
 using System;
 
 namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects.FleetOrders

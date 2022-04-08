@@ -23,8 +23,24 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             AutoNameSectors(editorSavedGame);
             AutoNameUnits(editorSavedGame);
             AutoNameFactions(editorSavedGame);
+            AutoNameFleets(editorSavedGame);
 
             Debug.Log("Finished auto-naming objects");
+        }
+
+        private static void AutoNameFleets(EditorSavedGame editorSavedGame)
+        {
+            foreach (var editorFleet in editorSavedGame.GetComponentsInChildren<EditorFleet>())
+            {
+                var factionPostfix = "_NoFaction";
+                if (editorFleet.Faction != null)
+                {
+                    factionPostfix = $"_{(editorFleet.Faction != null ? editorFleet.Faction.CustomShortName : "NoFactionName")}";
+                }
+
+                editorFleet.gameObject.name = $"Fleet{factionPostfix}";
+                EditorUtility.SetDirty(editorFleet);
+            }
         }
 
         private static void AutoNameSectors(EditorSavedGame editorSavedGame)

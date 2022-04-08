@@ -7,6 +7,6 @@
     {
         public double TimeoutTime { get; set; }
         public double StartTime { get; set; }
-        public FleetOrder Order { get; set; }
+        public EditorFleetOrderCommon Order { get; set; }
     }
 }

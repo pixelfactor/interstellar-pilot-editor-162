@@ -3,7 +3,7 @@
 namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
 {
     /// <summary>
-    /// A node on a <see cref="SectorPatrolPath" />
+    /// A node on a <see cref="EditorSectorPatrolPath" />
     /// </summary>
     public class SectorPatrolPathNode
     {

@@ -1,5 +1,6 @@
 ﻿using Pixelfactor.IP.SavedGames.V162.Editor.Assets.IPEditor.Scripts.PixelfactorIPSavedGamesV162Editor;
 using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects;
+using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects.FleetOrders.OrderTypes;
 using Pixelfactor.IP.SavedGames.V162.Model;
 using System.Linq;
 using UnityEngine;
@@ -80,6 +81,15 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                             TargetInterceptionLowerDistance = editorFleetSettings.TargetInterceptionLowerDistance,
                             TargetInterceptionUpperDistance = editorFleetSettings.TargetInterceptionUpperDistance,
                         };
+                    }
+
+                    // Orders
+                    var editorFleetOrders = editorFleet.GetComponentsInChildren<EditorFleetOrderBase>();
+                    foreach (var editorFleetOrder in editorFleetOrders)
+                    {
+                        var fleetOrder = CreateFleetOrderFromEditorFleetOrder.CreateFleetOrder(editorFleetOrder, editorSavedGame, savedGame);
+                        fleet.Orders.Orders.Add(fleetOrder);
+                        fleet.Orders.QueuedOrders.Add(fleetOrder);
                     }
 
                     savedGame.Fleets.Add(fleet);

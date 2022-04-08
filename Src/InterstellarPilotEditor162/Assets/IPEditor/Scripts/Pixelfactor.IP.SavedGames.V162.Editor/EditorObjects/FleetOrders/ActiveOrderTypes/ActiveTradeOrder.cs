@@ -5,7 +5,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects.FleetOrders.Active
 {
     public class ActiveTradeOrder : ActiveFleetOrder
     {
-        public CustomTradeRoute TradeRoute { get; set; }
+        public EditorCustomTradeRoute TradeRoute { get; set; }
         public double EndBuySellTime { get; set; }
         public double LastStateChangeTime { get; set; }
         public ActiveTradeOrderState CurrentState { get; set; }
