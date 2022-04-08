@@ -6,7 +6,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
 {
     public class ImportExportTool : MonoBehaviour
     {
-        [MenuItem("IPEditor/ValidateAndExport")]
+        [MenuItem("IPEditor/Validate and export")]
         public static void ValidateAndExport()
         {
             // Find the saved game

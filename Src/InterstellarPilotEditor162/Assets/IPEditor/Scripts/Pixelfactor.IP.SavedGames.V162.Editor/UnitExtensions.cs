@@ -1,4 +1,5 @@
-﻿using Pixelfactor.IP.SavedGames.V162.Model;
+﻿using Pixelfactor.IP.SavedGames.V162.Editor.Assets.IPEditor.Scripts.PixelfactorIPSavedGamesV162Editor;
+using Pixelfactor.IP.SavedGames.V162.Model;
 
 namespace Pixelfactor.IP.SavedGames.V162.Editor
 {
@@ -6,17 +7,22 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
     {
         public static bool IsStation(this Unit unit)
         {
-            return unit.Class.ToString().StartsWith("Station");
+            return unit.Class.IsStation();
         }
 
         public static bool IsShip(this Unit unit)
         {
-            return unit.Class.ToString().StartsWith("Ship");
+            return unit.Class.IsShip();
         }
 
         public static bool IsShipOrStation(this Unit unit)
         {
-            return IsStation(unit) || IsShip(unit);
+            return unit.Class.IsShipOrStation();
+        }
+
+        public static bool IsWormhole(this Unit unit)
+        {
+            return unit.Class.IsWormhole();
         }
     }
 }

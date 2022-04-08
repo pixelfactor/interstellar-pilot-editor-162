@@ -13,7 +13,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
         /// </summary>
         public static int BASE_ID = 100000;
 
-        [MenuItem("IPEditor/AutoAssignIds")]
+        [MenuItem("IPEditor/Auto-assign object Ids")]
         public static void AutoAssignIds()
         {
             // Find the saved game
@@ -29,7 +29,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                 if (unit.Id < 0)
                 {
                     unit.Id = NewUnitId(units);
-                    EditorUtility.SetDirty(unit.gameObject);
+                    EditorUtility.SetDirty(unit);
                 }
             }
 
@@ -39,7 +39,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                 if (faction.Id < 0)
                 {
                     faction.Id = NewFactionId(factions);
-                    EditorUtility.SetDirty(faction.gameObject);
+                    EditorUtility.SetDirty(faction);
                 }
             }
 
@@ -49,7 +49,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                 if (sector.Id < 0)
                 {
                     sector.Id = NewSectorId(sectors);
-                    EditorUtility.SetDirty(sector.gameObject);
+                    EditorUtility.SetDirty(sector);
                 }
             }
 
@@ -59,7 +59,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                 if (person.Id < 0)
                 {
                     person.Id = NewPersonId(people);
-                    EditorUtility.SetDirty(person.gameObject);
+                    EditorUtility.SetDirty(person);
                 }
             }
 

@@ -31,5 +31,15 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
                 Gizmos.DrawLine(transform.position, this.TargetWormholeUnit.transform.position);
             }
         }
+
+        public EditorSector GetActualTargetSector()
+        {
+            if (this.TargetWormholeUnit != null)
+            {
+                return this.TargetWormholeUnit.GetComponentInParent<EditorSector>();
+            }
+
+            return this.UnstableTarget?.GetComponentInParent<EditorSector>();
+        }
     }
 }

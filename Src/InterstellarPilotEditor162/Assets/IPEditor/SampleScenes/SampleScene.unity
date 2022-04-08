@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: m_Name
-      value: ShuttleAPlayer
+      value: Ship_ShuttleA_Faction_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
@@ -255,7 +255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeH_Ice (1)
+      value: Asteroid_TypeH
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
@@ -268,7 +268,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -320,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
       propertyPath: m_Name
-      value: BlackSailOutpost
+      value: Station_BlackSailOutpost_Faction_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
@@ -333,7 +333,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -381,7 +381,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: TurretLaserIII (7)
+      value: Station_LaserIII_Faction_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -394,7 +394,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -442,7 +442,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: TurretLaserV (4)
+      value: Station_LaserV_Faction_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -503,7 +503,7 @@ PrefabInstance:
       objectReference: {fileID: 960234975}
     - target: {fileID: 3760377284931665905, guid: f01094292f16d5b44b480e268ccd88f9, type: 3}
       propertyPath: m_Name
-      value: Shipyard
+      value: Station_Shipyard_Faction_Lambda Corp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f01094292f16d5b44b480e268ccd88f9, type: 3}
@@ -554,7 +554,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -602,7 +602,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: TurretLaserIII (1)
+      value: Station_LaserIII_Faction_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -615,7 +615,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1292402053928738505, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_Name
-      value: AsteroidClusterTypeA_Rock (1)
+      value: AsteroidCluster_TypeA
       objectReference: {fileID: 0}
     - target: {fileID: 1292402053928738505, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_IsActive
@@ -623,7 +623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4656951364488765979, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4656951364488765979, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_LocalPosition.x
@@ -747,7 +747,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: eedd89d70a31f84439354ade36e52c0d, type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: eedd89d70a31f84439354ade36e52c0d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -799,7 +799,7 @@ PrefabInstance:
       objectReference: {fileID: 1272879044}
     - target: {fileID: 3760377284931665905, guid: eedd89d70a31f84439354ade36e52c0d, type: 3}
       propertyPath: m_Name
-      value: PioneerA_TJ
+      value: Ship_PioneerA_Faction_TJ
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eedd89d70a31f84439354ade36e52c0d, type: 3}
@@ -817,7 +817,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4484576795801601491, guid: b6ef81efc6fb95d43a8a099a28ff378d, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 4484576795801601491, guid: b6ef81efc6fb95d43a8a099a28ff378d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -861,7 +861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8813697111012170827, guid: b6ef81efc6fb95d43a8a099a28ff378d, type: 3}
       propertyPath: m_Name
-      value: PlanetJupitersCousin
+      value: Planet_JupitersCousin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6ef81efc6fb95d43a8a099a28ff378d, type: 3}
@@ -906,7 +906,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 281928334902145842, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 281928334902145842, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -950,7 +950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeH_Ice (5)
+      value: Asteroid_TypeH
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
@@ -963,7 +963,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1007,7 +1007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_Name
-      value: WormholeToDymapa753
+      value: Wormhole_To_Dymapa 753
       objectReference: {fileID: 0}
     - target: {fileID: 9043795926212612615, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: TargetWormholeUnit
@@ -1035,7 +1035,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1087,7 +1087,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
       propertyPath: m_Name
-      value: OrionA (1)
+      value: Ship_OrionA_Faction_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
@@ -1194,7 +1194,7 @@ PrefabInstance:
       objectReference: {fileID: 960234975}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: TurretLaserV (1)
+      value: Station_LaserV_Faction_Lambda Corp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -1259,7 +1259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7434137694969661512, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
       propertyPath: m_Name
-      value: SectorBetaPindola
+      value: Sector_Beta Pindola
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
@@ -1325,7 +1325,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
       propertyPath: m_Name
-      value: MilitaryOutpost
+      value: Station_MilitaryOutpost_Faction_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
@@ -1338,7 +1338,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1292402053928738505, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_Name
-      value: AsteroidClusterTypeA_Rock (4)
+      value: AsteroidCluster_TypeA
       objectReference: {fileID: 0}
     - target: {fileID: 1292402053928738505, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_IsActive
@@ -1499,7 +1499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (1)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -1556,7 +1556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (3)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -1613,7 +1613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeH_Ice (4)
+      value: Asteroid_TypeH
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
@@ -1626,7 +1626,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1674,7 +1674,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: TurretLaserV (1)
+      value: Station_LaserV_Faction_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -1687,7 +1687,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1735,7 +1735,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: TurretLaserIII
+      value: Station_LaserIII_Faction_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -1792,7 +1792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (1)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -1857,7 +1857,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: a002b614191ec684c8a6527904280c62, type: 3}
       propertyPath: m_Name
-      value: Refinery
+      value: Station_Refinery_Faction_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a002b614191ec684c8a6527904280c62, type: 3}
@@ -1870,7 +1870,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1918,7 +1918,7 @@ PrefabInstance:
       objectReference: {fileID: 728340297}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: TurretLaserIII (5)
+      value: Station_LaserIII_Faction_The Pod Shop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -1979,7 +1979,7 @@ PrefabInstance:
       objectReference: {fileID: 960234975}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: TurretLaserV
+      value: Station_LaserV_Faction_Lambda Corp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -2086,7 +2086,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2134,7 +2134,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: TurretLaserV (9)
+      value: Station_LaserV_Faction_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -2171,7 +2171,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1653622243463373397, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
       propertyPath: CustomShortName
-      value: The Pod Shop
+      value: Pod Shop
       objectReference: {fileID: 0}
     - target: {fileID: 1653622243463373397, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
       propertyPath: TradeEfficiency
@@ -2260,7 +2260,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1292402053928738505, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_Name
-      value: AsteroidClusterTypeA_Rock (3)
+      value: AsteroidCluster_TypeA
       objectReference: {fileID: 0}
     - target: {fileID: 1292402053928738505, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_IsActive
@@ -2378,7 +2378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7434137694969661512, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
       propertyPath: m_Name
-      value: SectorGatopea
+      value: Sector_Gatopea
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
@@ -2440,7 +2440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_Name
-      value: WormholeToDymapa753
+      value: Wormhole_To_Dymapa 753
       objectReference: {fileID: 0}
     - target: {fileID: 9043795926212612615, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: TargetWormholeUnit
@@ -2468,7 +2468,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2512,7 +2512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_Name
-      value: CargoContainer
+      value: Cargo_Container
       objectReference: {fileID: 0}
     - target: {fileID: 7856581251997153304, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: Quantity
@@ -2577,7 +2577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_Name
-      value: CargoContainer
+      value: Cargo_Container
       objectReference: {fileID: 0}
     - target: {fileID: 7856581251997153304, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: Quantity
@@ -2642,7 +2642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (2)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -2655,7 +2655,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2703,7 +2703,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: TurretLaserV (12)
+      value: Station_LaserV_Faction_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -2764,7 +2764,7 @@ PrefabInstance:
       objectReference: {fileID: 960234975}
     - target: {fileID: 3760377284931665905, guid: e53c1946b795335479b9561394f4229c, type: 3}
       propertyPath: m_Name
-      value: TradeStation_Lambda
+      value: Station_TradeStation_Faction_Lambda Corp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e53c1946b795335479b9561394f4229c, type: 3}
@@ -2879,7 +2879,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2931,7 +2931,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
       propertyPath: m_Name
-      value: OrionA
+      value: Ship_OrionA_Faction_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
@@ -2948,7 +2948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: a767540c0710b8c48af2bd8dc111bc0c, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: a767540c0710b8c48af2bd8dc111bc0c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2992,7 +2992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: a767540c0710b8c48af2bd8dc111bc0c, type: 3}
       propertyPath: m_Name
-      value: Lab_Abandoned
+      value: Station_Laboratory
       objectReference: {fileID: 0}
     - target: {fileID: 6035386738225123759, guid: a767540c0710b8c48af2bd8dc111bc0c, type: 3}
       propertyPath: Quantity
@@ -3009,7 +3009,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: a002b614191ec684c8a6527904280c62, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: a002b614191ec684c8a6527904280c62, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3057,7 +3057,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: a002b614191ec684c8a6527904280c62, type: 3}
       propertyPath: m_Name
-      value: Refinery
+      value: Station_Refinery_Faction_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a002b614191ec684c8a6527904280c62, type: 3}
@@ -3130,7 +3130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7434137694969661512, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
       propertyPath: m_Name
-      value: SectorDymapa753
+      value: Sector_Dymapa 753
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
@@ -3299,7 +3299,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: ba76e83ec7677e644bc64e511a684394, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: ba76e83ec7677e644bc64e511a684394, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3343,7 +3343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: ba76e83ec7677e644bc64e511a684394, type: 3}
       propertyPath: m_Name
-      value: FlyerA_Abandoned
+      value: Ship_FlyerA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba76e83ec7677e644bc64e511a684394, type: 3}
@@ -3400,7 +3400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -3457,7 +3457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (3)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -3502,7 +3502,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1292402053928738505, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_Name
-      value: AsteroidClusterTypeA_Rock
+      value: AsteroidCluster_TypeA
       objectReference: {fileID: 0}
     - target: {fileID: 1292402053928738505, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_IsActive
@@ -3510,7 +3510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4656951364488765979, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4656951364488765979, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_LocalScale.y
@@ -3616,7 +3616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_Name
-      value: WormholeToGatopea
+      value: Wormhole_To_Gatopea
       objectReference: {fileID: 0}
     - target: {fileID: 9043795926212612615, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: TargetWormholeUnit
@@ -3644,7 +3644,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3692,7 +3692,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: TurretLaserIII
+      value: Station_LaserIII_Faction_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -3705,7 +3705,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3753,7 +3753,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: TurretLaserIII (3)
+      value: Station_LaserIII_Faction_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -3810,7 +3810,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -3823,7 +3823,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1292402053928738505, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_Name
-      value: AsteroidClusterTypeA_Rock (2)
+      value: AsteroidCluster_TypeA
       objectReference: {fileID: 0}
     - target: {fileID: 1292402053928738505, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_IsActive
@@ -3831,7 +3831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4656951364488765979, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4656951364488765979, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3884,7 +3884,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 04ee0eb287e483d4583810eab6839fb3, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 04ee0eb287e483d4583810eab6839fb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3936,7 +3936,7 @@ PrefabInstance:
       objectReference: {fileID: 728340297}
     - target: {fileID: 3760377284931665905, guid: 04ee0eb287e483d4583810eab6839fb3, type: 3}
       propertyPath: m_Name
-      value: HypersleepPodFactory
+      value: Station_HypersleepPodFactory_Faction_The Pod Shop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04ee0eb287e483d4583810eab6839fb3, type: 3}
@@ -3949,7 +3949,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 3c8202ea641d5c14d9f981aadae9b7d8, type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 3c8202ea641d5c14d9f981aadae9b7d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4001,7 +4001,7 @@ PrefabInstance:
       objectReference: {fileID: 1272879044}
     - target: {fileID: 3760377284931665905, guid: 3c8202ea641d5c14d9f981aadae9b7d8, type: 3}
       propertyPath: m_Name
-      value: RepairShop_TJ_Breakers
+      value: Station_RepairShop_Faction_TJ
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c8202ea641d5c14d9f981aadae9b7d8, type: 3}
@@ -4124,7 +4124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (4)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -4220,7 +4220,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4264,7 +4264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_Name
-      value: CargoContainer (1)
+      value: Cargo_Container
       objectReference: {fileID: 0}
     - target: {fileID: 7856581251997153304, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: Quantity
@@ -4329,7 +4329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -4499,7 +4499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (2)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -4579,7 +4579,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4627,7 +4627,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: TurretLaserIII (4)
+      value: Station_LaserIII_Faction_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -4754,7 +4754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (1)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -4811,7 +4811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (2)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -4891,11 +4891,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1292402053928738505, guid: c7e5df85e9937d24f9fc4cb9b4deab53, type: 3}
       propertyPath: m_Name
-      value: AsteroidClusterTypeH_Ice
+      value: AsteroidCluster_TypeH
       objectReference: {fileID: 0}
     - target: {fileID: 4656951364488765979, guid: c7e5df85e9937d24f9fc4cb9b4deab53, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 4656951364488765979, guid: c7e5df85e9937d24f9fc4cb9b4deab53, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4999,7 +4999,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5055,7 +5055,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: m_Name
-      value: ShuttleA (1)
+      value: Ship_ShuttleA_Faction_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
@@ -5112,7 +5112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8813697111012170827, guid: 4a87b9651b4879547aad468f58aef152, type: 3}
       propertyPath: m_Name
-      value: PlanetAlienOrange
+      value: Planet_AlienOrange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a87b9651b4879547aad468f58aef152, type: 3}
@@ -5169,7 +5169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_Name
-      value: WormholeToBetaPindola
+      value: Wormhole_To_Beta Pindola
       objectReference: {fileID: 0}
     - target: {fileID: 9043795926212612615, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: TargetWormholeUnit
@@ -5241,7 +5241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (2)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -5254,7 +5254,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 5adf2ce541a99fd4d9170fb174323ac0, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 5adf2ce541a99fd4d9170fb174323ac0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5298,7 +5298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: 5adf2ce541a99fd4d9170fb174323ac0, type: 3}
       propertyPath: m_Name
-      value: StorageLocker
+      value: Station_StorageLocker
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adf2ce541a99fd4d9170fb174323ac0, type: 3}
@@ -5360,7 +5360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (1)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -5473,7 +5473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeH_Ice (3)
+      value: Asteroid_TypeH
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
@@ -5530,7 +5530,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (4)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -5543,7 +5543,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5591,7 +5591,7 @@ PrefabInstance:
       objectReference: {fileID: 728340297}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: TurretLaserIII (6)
+      value: Station_LaserIII_Faction_The Pod Shop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -5604,7 +5604,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5652,7 +5652,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: TurretLaserIII (2)
+      value: Station_LaserIII_Faction_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -5709,7 +5709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (3)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -5815,7 +5815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (3)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -5872,7 +5872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (4)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -5917,7 +5917,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5965,7 +5965,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: TurretLaserV (10)
+      value: Station_LaserV_Faction_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -6022,7 +6022,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (5)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -6155,7 +6155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeH_Ice
+      value: Asteroid_TypeH
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
@@ -6168,7 +6168,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6216,7 +6216,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: TurretLaserV (2)
+      value: Station_LaserV_Faction_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -6329,7 +6329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeA_Rock (4)
+      value: Asteroid_TypeA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -6386,7 +6386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897587888585231384, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
       propertyPath: m_Name
-      value: AsteroidTypeH_Ice (2)
+      value: Asteroid_TypeH
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
