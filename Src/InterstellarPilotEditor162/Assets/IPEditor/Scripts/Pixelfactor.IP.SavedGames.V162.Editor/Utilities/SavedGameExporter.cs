@@ -1,4 +1,5 @@
-﻿using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects;
+﻿using Pixelfactor.IP.SavedGames.V162.Editor.Assets.IPEditor.Scripts.PixelfactorIPSavedGamesV162Editor;
+using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects;
 using Pixelfactor.IP.SavedGames.V162.Model;
 using System.Linq;
 using UnityEngine;
@@ -22,12 +23,60 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
             ExportPeople(editorSavedGame, savedGame);
             ExportPlayer(editorSavedGame, savedGame);
             ExportScenarioData(editorSavedGame, savedGame);
+            ExportFleetSpawners(editorSavedGame, savedGame);
             AutoCreateFleetsWhereNeeded(editorSavedGame, savedGame);
             ExportHeader(editorSavedGame, savedGame);
             SeedFactionIntel(editorSavedGame, savedGame);
 
             return savedGame;
 
+        }
+
+        private static void ExportFleetSpawners(EditorSavedGame editorSavedGame, SavedGame savedGame)
+        {
+            foreach (var editorSector in editorSavedGame.GetComponentsInChildren<EditorSector>())
+            {
+                var sector = savedGame.Sectors.Single(e => e.Id == editorSector.Id);
+
+                foreach (var editorFleetSpawner in editorSector.GetComponentsInChildren<EditorFleetSpawner>())
+                {
+                    var editorShipTypes = editorFleetSpawner.GetComponentsInChildren<EditorFleetSpawnerItem>();
+                    if (editorShipTypes.Length == 0)
+                    {
+                        Debug.LogWarning("Fleet spawner has no items", editorFleetSpawner);
+                        return;
+                    }
+          
+                    var fleetSpawner = new FleetSpawner
+                    {
+                        AllowRespawnInActiveScene =editorFleetSpawner.AllowRespawnInActiveScene,
+                        FleetHomeBase = savedGame.Units.FirstOrDefault(e => e.Id == editorFleetSpawner.FleetHomeBase?.Id),
+                        Position = (sector.Position.ToVector3() + editorFleetSpawner.transform.localPosition).ToVec3(),
+                        FleetResourceName = editorFleetSpawner.FleetType.ToString(),
+                        PilotResourceNames = new string[] { editorFleetSpawner.PilotType.ToString() }.ToList(),
+                        MinGroupUnitCount = editorFleetSpawner.MinShipCount,
+                        MaxGroupUnitCount = editorFleetSpawner.MaxShipCount,
+                        MinTimeBeforeSpawn = editorFleetSpawner.MinTimeBeforeSpawn,
+                        MaxTimeBeforeSpawn = editorFleetSpawner.MaxTimeBeforeSpawn,
+                        OwnerFaction = savedGame.Factions.FirstOrDefault(e => e.Id == editorFleetSpawner.OwnerFaction?.Id),
+                        UnitClasses = editorShipTypes.Select(e => e.UnitClass).ToList(),
+                        NextSpawnTime = editorFleetSpawner.NextSpawnTime,
+                        SpawnTimeRandomness = editorFleetSpawner.SpawnTimeRandomness,
+                        RespawnWhenNoObjectives = editorFleetSpawner.RespawnWhenNoObjectives,
+                        RespawnWhenNoPilots = editorFleetSpawner.RespawnWhenNoPilots,
+                        Sector = sector,
+                    };
+
+                    var editorParentUnit = editorFleetSpawner.GetComponentInParent<EditorUnit>();
+                    if (editorParentUnit != null)
+                    {
+                        fleetSpawner.SpawnDock = savedGame.Units.FirstOrDefault(e => e.Id == editorParentUnit.Id);
+                    }
+
+                    fleetSpawner.FleetHomeSector = fleetSpawner?.FleetHomeBase?.Sector;
+                    savedGame.FleetSpawners.Add(fleetSpawner);
+                }
+            }
         }
 
         /// <summary>
