@@ -4,7 +4,7 @@ using Pixelfactor.IP.SavedGames.V162.Model;
 using System.Linq;
 using UnityEngine;
 
-namespace Pixelfactor.IP.SavedGames.V162.Editor
+namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
 {
     public static class SavedGameExporter
     {
@@ -20,6 +20,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
             ExportFactions(editorSavedGame, savedGame);
             ExportUnits(editorSavedGame, savedGame);
             ExportWormholes(editorSavedGame, savedGame);
+            ExportFleets(editorSavedGame, savedGame);
             ExportPeople(editorSavedGame, savedGame);
             ExportPlayer(editorSavedGame, savedGame);
             ExportScenarioData(editorSavedGame, savedGame);
@@ -30,6 +31,60 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
 
             return savedGame;
 
+        }
+
+        private static void ExportFleets(EditorSavedGame editorSavedGame, SavedGame savedGame)
+        {
+            foreach (var editorSector in editorSavedGame.GetComponentsInChildren<EditorSector>())
+            {
+                var sector = savedGame.Sectors.Single(e => e.Id == editorSector.Id);
+                if (sector == null)
+                {
+                    LogAndThrow("Expected to find sector", editorSector);
+                }
+
+                foreach (var editorFleet in editorSector.GetComponentsInChildren<EditorFleet>())
+                {
+                    if (editorFleet.Faction == null)
+                    {
+                        LogAndThrow("Fleets must have a faction", editorFleet);
+                    }
+
+                    var fleet = new Fleet
+                    {
+                        Id = editorFleet.Id,
+                        ExcludeFromFactionAI = editorFleet.ExcludeFromFactionAI,
+                        Faction = savedGame.Factions.FirstOrDefault(e => e.Id == editorFleet.Faction?.Id),
+                        IsActive = true,
+                        HomeBaseUnit = savedGame.Units.FirstOrDefault(e => e.Id == editorFleet.HomeBaseUnit?.Id),
+                        Position = SectorLocalPositionToWorld(sector, editorFleet.transform.localPosition).ToVec3(),
+                        Sector = sector,
+                        Orders = new Model.FleetOrders.FleetOrderCollection(), // This collection will be auto-init by a newer version of the "model". For now we must do it.
+                    };
+
+                    var editorFleetSettings = editorFleet.GetComponentInChildren<EditorFleetSettings>();
+                    if (editorFleetSettings != null)
+                    {
+                        fleet.FleetSettings = new FleetSettings
+                        {
+                            AllowAttack = editorFleetSettings.AllowAttack,
+                            AllowCombatInterception = editorFleetSettings.AllowCombatInterception,
+                            AttackTargetScoreThreshold = editorFleetSettings.AttackTargetScoreThreshold,
+                            ControllersCanCollectCargo = editorFleetSettings.PilotsCanCollectCargo,
+                            ControllersCollectOnlyEquipment = editorFleetSettings.PilotsCollectOnlyEquipment,
+                            DestroyWhenNoPilots = true,
+                            RestrictMaxJumps = editorFleetSettings.MaxJumpDistance > 0,
+                            MaxJumpDistance = editorFleetSettings.MaxJumpDistance >= 0 ? editorFleetSettings.MaxJumpDistance : 99,
+                            PreferCloak = editorFleetSettings.PreferCloak,
+                            PreferToDock = editorFleetSettings.PreferToDock,
+                            TargetInterceptionLowerDistance = editorFleetSettings.TargetInterceptionLowerDistance,
+                            TargetInterceptionUpperDistance = editorFleetSettings.TargetInterceptionUpperDistance,
+                        };
+                    }
+
+                    savedGame.Fleets.Add(fleet);
+                }
+            }
         }
 
         private static void ExportFleetSpawners(EditorSavedGame editorSavedGame, SavedGame savedGame)
@@ -46,10 +101,10 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                         Debug.LogWarning("Fleet spawner has no items", editorFleetSpawner);
                         return;
                     }
-          
+
                     var fleetSpawner = new FleetSpawner
                     {
-                        AllowRespawnInActiveScene =editorFleetSpawner.AllowRespawnInActiveScene,
+                        AllowRespawnInActiveScene = editorFleetSpawner.AllowRespawnInActiveScene,
                         FleetHomeBase = savedGame.Units.FirstOrDefault(e => e.Id == editorFleetSpawner.FleetHomeBase?.Id),
                         Position = (sector.Position.ToVector3() + editorFleetSpawner.transform.localPosition).ToVec3(),
                         FleetResourceName = editorFleetSpawner.FleetType.ToString(),
@@ -77,6 +132,11 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                     savedGame.FleetSpawners.Add(fleetSpawner);
                 }
             }
+        }
+
+        private static Vector3 SectorLocalPositionToWorld(Sector sector, Vector3 localPosition)
+        {
+            return sector.Position.ToVector3() + localPosition;
         }
 
         /// <summary>
@@ -316,11 +376,17 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
 
                     if (editorComponentUnit != null && editorComponentUnit.Pilot == editorPerson)
                     {
+                        if (person.Faction == null)
+                        {
+                            LogAndThrow("Pilot must always have a faction", editorPerson);
+                        }
+
                         person.IsPilot = true;
 
                         if (person.CurrentUnit.Faction != person.Faction)
                         {
                             Debug.LogWarning("Person set to be a pilot of a unit that has a different faction. Unit faction will be changed to match pilot", editorPerson);
+                            person.CurrentUnit.Faction = person.Faction;
                         }
                     }
 
@@ -337,6 +403,25 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                         DestroyWhenNoUnit = true,
                         Person = person
                     };
+
+                    // Find fleet
+                    var editorFleet = editorNpcPilot.GetComponentInParent<EditorFleet>();
+                    if (editorFleet != null)
+                    {
+                        var fleet = savedGame.Fleets.FirstOrDefault(e => e.Id == editorFleet.Id);
+                        if (fleet == null)
+                        {
+                            LogAndThrow("Expecting to find a fleet", editorPerson);
+                        }
+
+                        if (fleet.Faction != person.Faction)
+                        {
+                            LogAndThrow("Fleet has a different faction to pilot. This is not supported", editorPerson);
+                        }
+
+                        person.NpcPilot.Fleet = fleet;
+                        person.NpcPilot.Fleet.Npcs.Add(person.NpcPilot);
+                    }
                 }
 
                 savedGame.People.Add(person);
@@ -431,7 +516,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
             if (editorCargoContainerData != null)
             {
                 if (unit.Class != UnitClass.Cargo_Container &&
-                    unit.Class != UnitClass.Cargo_Ice && 
+                    unit.Class != UnitClass.Cargo_Ice &&
                     unit.Class != UnitClass.Cargo_Rock)
                 {
                     LogAndThrow("This type of unit does not support being a cargo container", editorCargoContainerData);
@@ -576,7 +661,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                         MaxFleetUnitCount = editorFactionSettings.MaxFleetUnitCount,
                         OffensiveStance = editorFactionSettings.OffensiveStance,
                         PreferenceToBuildStations = editorFactionSettings.PreferenceToBuildStations,
-                        PreferenceToBuildTurrets =  editorFactionSettings.PreferenceToBuildTurrets,
+                        PreferenceToBuildTurrets = editorFactionSettings.PreferenceToBuildTurrets,
                         PreferenceToPlaceBounty = editorFactionSettings.PreferenceToPlaceBounty,
                         PreferSingleShip = editorFactionSettings.PreferSingleShip,
                         RepairMinCreditsBeforeRepair = editorFactionSettings.RepairMinCreditsBeforeRepair,

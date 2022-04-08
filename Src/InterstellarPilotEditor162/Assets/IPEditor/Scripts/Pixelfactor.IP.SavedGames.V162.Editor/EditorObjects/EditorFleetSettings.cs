@@ -1,9 +1,9 @@
-﻿namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
-{
-    public class FleetSettings
-    {
-        public bool NotifyWhenOrderComplete = false;
+﻿using UnityEngine;
 
+namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
+{
+    public class EditorFleetSettings : MonoBehaviour
+    {
         /// <summary>
         /// When set to false, units won't intercept targets although they may still fire at them<br />
         /// When false, the equivalent setting on a fleet will not apply
@@ -21,9 +21,9 @@
         /// <summary>
         /// When true, controllers will collect cargo
         /// </summary>
-        public bool ControllersCanCollectCargo = true;
+        public bool PilotsCanCollectCargo = true;
 
-        public bool ControllersCollectOnlyEquipment = true;
+        public bool PilotsCollectOnlyEquipment = true;
 
         /// <summary>
         /// Distance at which fleet members will be allowed to intercept targets
@@ -45,14 +45,10 @@
         /// </summary>
         public bool PreferToDock = false;
 
-        public bool RestrictMaxJumps = false;
-
         /// <summary>
         /// Defines how far this fleet can travel from its home base (if it is assigned)<br />
         /// Applies only if restrict max jumps is true
         /// </summary>
-        public int MaxJumpDistance = 99;
-
-        public bool DestroyWhenNoPilots = false;
+        public int MaxJumpDistance = 8;
     }
 }

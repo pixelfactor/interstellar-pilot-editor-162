@@ -1,11 +1,11 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Pixelfactor.IP.SavedGames.V162.Editor
+namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
 {
     public class ValidatorTool : MonoBehaviour
     {
-        [MenuItem("IPEditor/Validate")]
+        [MenuItem("IPEditor/Export/Validate")]
         public static void Validate()
         {
             // Find the saved game

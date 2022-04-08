@@ -2,11 +2,11 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace Pixelfactor.IP.SavedGames.V162.Editor
+namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
 {
     public class ImportExportTool : MonoBehaviour
     {
-        [MenuItem("IPEditor/Validate and export")]
+        [MenuItem("IPEditor/Export/Validate and export")]
         public static void ValidateAndExport()
         {
             // Find the saved game

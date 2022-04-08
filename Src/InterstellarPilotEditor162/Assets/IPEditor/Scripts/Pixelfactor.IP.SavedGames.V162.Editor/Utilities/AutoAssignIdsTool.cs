@@ -1,10 +1,11 @@
 ﻿using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Pixelfactor.IP.SavedGames.V162.Editor
+namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
 {
     public class AutoAssignIdsTool
     {
@@ -13,7 +14,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
         /// </summary>
         public static int BASE_ID = 100000;
 
-        [MenuItem("IPEditor/Auto-assign object Ids")]
+        [MenuItem("IPEditor/Tools/Auto-assign object Ids")]
         public static void AutoAssignIds()
         {
             // Find the saved game
@@ -63,7 +64,22 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                 }
             }
 
+            var fleets = editorSavedGame.GetComponentsInChildren<EditorFleet>();
+            foreach (var fleet in fleets)
+            {
+                if (fleet.Id < 0)
+                {
+                    fleet.Id = NewFleetId(fleets);
+                    EditorUtility.SetDirty(fleet);
+                }
+            }
+
             Debug.Log("Finished auto-assigned ids");
+        }
+
+        private static int NewFleetId(IEnumerable<EditorFleet> fleets)
+        {
+            return Mathf.Max(BASE_ID, fleets.Select(e => e.Id).DefaultIfEmpty().Max()) + 1;
         }
 
         public static int NewUnitId(IEnumerable<EditorUnit> units)

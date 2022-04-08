@@ -1,10 +1,8 @@
-﻿using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects.FleetOrders;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
 {
-    public class EditorFleet
+    public class EditorFleet : MonoBehaviour
     {
         public int Id = -1;
 

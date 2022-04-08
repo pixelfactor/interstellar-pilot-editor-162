@@ -3,14 +3,14 @@ using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects;
 using UnityEditor;
 using UnityEngine;
 
-namespace Pixelfactor.IP.SavedGames.V162.Editor
+namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
 {
     public class AutoNameObjects
     {
         /// <summary>
         /// 
         /// </summary>
-        [MenuItem("IPEditor/Auto-name objects")]
+        [MenuItem("IPEditor/Tools/Auto-name objects")]
         public static void AutoNameAllObjects()
         {
             var editorSavedGame = GameObject.FindObjectOfType<EditorSavedGame>();

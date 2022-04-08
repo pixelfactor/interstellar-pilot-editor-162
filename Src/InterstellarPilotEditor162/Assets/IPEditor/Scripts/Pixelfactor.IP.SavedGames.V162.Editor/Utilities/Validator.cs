@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace Pixelfactor.IP.SavedGames.V162.Editor
+namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
 {
     public static class Validator
     {
@@ -17,11 +17,23 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
             ValidateFactionIds(editorSavedGame, throwOnError);
             ValidatePersonIds(editorSavedGame, throwOnError);
             ValidateSectorIds(editorSavedGame, throwOnError);
+            ValidateFleetIds(editorSavedGame, throwOnError);
 
             ValidateDuplicateSectors(editorSavedGame, throwOnError);
             ValidateDuplicateFactions(editorSavedGame, throwOnError);
             ValidateDuplicatePeople(editorSavedGame, throwOnError);
             ValidateDuplicateUnits(editorSavedGame, throwOnError);
+        }
+
+        private static void ValidateFleetIds(EditorSavedGame editorSavedGame, bool throwOnError)
+        {
+            foreach (var fleet in editorSavedGame.GetComponentsInChildren<EditorFleet>())
+            {
+                if (fleet.Id < 0)
+                {
+                    OnError("All fleets require a valid (>0) id", fleet, throwOnError);
+                }
+            }
         }
 
         private static void ValidateUnitIds(EditorSavedGame editorSavedGame, bool throwOnError)
