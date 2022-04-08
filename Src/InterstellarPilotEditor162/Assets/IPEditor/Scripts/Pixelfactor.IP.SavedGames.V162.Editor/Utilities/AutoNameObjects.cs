@@ -20,19 +20,46 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                 return;
             }
 
+            AutoNameSectors(editorSavedGame);
+            AutoNameUnits(editorSavedGame);
+            AutoNameFactions(editorSavedGame);
+
+            Debug.Log("Finished auto-naming objects");
+        }
+
+        private static void AutoNameSectors(EditorSavedGame editorSavedGame)
+        {
             foreach (var editorSector in editorSavedGame.GetComponentsInChildren<EditorSector>())
             {
                 editorSector.gameObject.name = $"Sector_{(!string.IsNullOrWhiteSpace(editorSector.Name) ? editorSector.Name : "Unnamed")}";
                 EditorUtility.SetDirty(editorSector);
+            }
+        }
 
+        private static void AutoNameUnits(EditorSavedGame editorSavedGame)
+        {
+            foreach (var editorSector in editorSavedGame.GetComponentsInChildren<EditorSector>())
+            {
                 foreach (var editorUnit in editorSector.GetComponentsInChildren<EditorUnit>())
                 {
                     editorUnit.gameObject.name = GetEditorUnitName(editorUnit);
                     EditorUtility.SetDirty(editorSector);
                 }
             }
+        }
 
-            Debug.Log("Finished auto-naming objects");
+        private static void AutoNameFactions(EditorSavedGame editorSavedGame)
+        {
+            foreach (var editorFaction in editorSavedGame.GetComponentsInChildren<EditorFaction>())
+            {
+                editorFaction.gameObject.name = GetEditorFactionName(editorFaction);
+                EditorUtility.SetDirty(editorFaction);
+            }
+        }
+
+        private static string GetEditorFactionName(EditorFaction editorFaction)
+        {
+            return $"Faction_{(!string.IsNullOrWhiteSpace(editorFaction.CustomShortName) ? editorFaction.CustomShortName : "NoName")}";
         }
 
         private static string GetEditorUnitName(EditorUnit editorUnit)
@@ -55,12 +82,36 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                 return $"Wormhole_MissingData";
             }
 
+            var factionPostfix = string.Empty;
             if (editorUnit.Faction != null)
-            { 
-                return editorUnit.gameObject.name = $"{editorUnit.Class.ToString()}_Faction_{(editorUnit.Faction != null ? editorUnit.Faction.CustomShortName : "NoName")}";
+            {
+                factionPostfix = $"_{(editorUnit.Faction != null ? editorUnit.Faction.CustomShortName : "NoFactionName")}";
             }
 
-            return editorUnit.gameObject.name = $"{editorUnit.Class.ToString()}";
+            if (editorUnit.Class.IsCargo())
+            {
+                var cargo = editorUnit.GetComponent<EditorUnitCargoData>();
+                if (cargo != null)
+                {
+                    return $"Cargo_{cargo.CargoClass}_{cargo.Quantity}{factionPostfix}";
+                }
+                else
+                {
+                    return "Cargo_MissingData";
+                }
+            }
+
+            if (editorUnit.Class.IsShipOrStation())
+            {
+                if (editorUnit.Faction != null)
+                {
+                    return $"{editorUnit.Class.ToString()}{factionPostfix}";
+                }
+
+                return $"Abandoned_{editorUnit.Class.ToString()}";
+            }
+
+            return $"{editorUnit.Class.ToString()}";
         }
     }
 }

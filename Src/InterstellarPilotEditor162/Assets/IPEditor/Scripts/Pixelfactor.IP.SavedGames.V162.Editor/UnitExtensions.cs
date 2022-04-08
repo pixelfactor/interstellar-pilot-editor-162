@@ -24,5 +24,10 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
         {
             return unit.Class.IsWormhole();
         }
+
+        public static bool IsCargo(this Unit unit)
+        {
+            return unit.Class.IsCargo();
+        }
     }
 }

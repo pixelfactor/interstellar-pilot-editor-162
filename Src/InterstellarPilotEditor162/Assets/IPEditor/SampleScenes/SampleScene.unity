@@ -188,7 +188,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: m_Name
-      value: Ship_ShuttleA_Faction_TEF
+      value: Ship_ShuttleA_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
@@ -259,71 +259,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
---- !u!1001 &71208094
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 758405480}
-    m_Modifications:
-    - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_RootOrder
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -730
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2033
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1499588013825266274, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3585806800839264951, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: Name
-      value: Outpost 7A2F
-      objectReference: {fileID: 0}
-    - target: {fileID: 3585806800839264951, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: Faction
-      value: 
-      objectReference: {fileID: 1626804947}
-    - target: {fileID: 3760377284931665905, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
-      propertyPath: m_Name
-      value: Station_BlackSailOutpost_Faction_Gat. Rebels
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 27a041a92880ccd4f8c1e050da0b73ee, type: 3}
 --- !u!1001 &87272603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -381,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: Station_LaserIII_Faction_TEF
+      value: Station_LaserIII_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -442,7 +377,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: Station_LaserV_Faction_TEF
+      value: Station_LaserV_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -503,7 +438,7 @@ PrefabInstance:
       objectReference: {fileID: 960234975}
     - target: {fileID: 3760377284931665905, guid: f01094292f16d5b44b480e268ccd88f9, type: 3}
       propertyPath: m_Name
-      value: Station_Shipyard_Faction_Lambda Corp
+      value: Station_Shipyard_Lambda Corp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f01094292f16d5b44b480e268ccd88f9, type: 3}
@@ -602,7 +537,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: Station_LaserIII_Faction_Gat. Rebels
+      value: Station_LaserIII_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -799,7 +734,7 @@ PrefabInstance:
       objectReference: {fileID: 1272879044}
     - target: {fileID: 3760377284931665905, guid: eedd89d70a31f84439354ade36e52c0d, type: 3}
       propertyPath: m_Name
-      value: Ship_PioneerA_Faction_TJ
+      value: Ship_PioneerA_TJ
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eedd89d70a31f84439354ade36e52c0d, type: 3}
@@ -1087,7 +1022,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
       propertyPath: m_Name
-      value: Ship_OrionA_Faction_Gat. Rebels
+      value: Ship_OrionA_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
@@ -1194,7 +1129,7 @@ PrefabInstance:
       objectReference: {fileID: 960234975}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: Station_LaserV_Faction_Lambda Corp
+      value: Station_LaserV_Lambda Corp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -1325,7 +1260,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
       propertyPath: m_Name
-      value: Station_MilitaryOutpost_Faction_TEF
+      value: Station_MilitaryOutpost_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
@@ -1674,7 +1609,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: Station_LaserV_Faction_TEF
+      value: Station_LaserV_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -1735,7 +1670,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: Station_LaserIII_Faction_Gat. Rebels
+      value: Station_LaserIII_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -1857,7 +1792,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: a002b614191ec684c8a6527904280c62, type: 3}
       propertyPath: m_Name
-      value: Station_Refinery_Faction_TEF
+      value: Station_Refinery_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a002b614191ec684c8a6527904280c62, type: 3}
@@ -1918,7 +1853,7 @@ PrefabInstance:
       objectReference: {fileID: 728340297}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: Station_LaserIII_Faction_The Pod Shop
+      value: Station_LaserIII_Pod Shop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -1979,7 +1914,7 @@ PrefabInstance:
       objectReference: {fileID: 960234975}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: Station_LaserV_Faction_Lambda Corp
+      value: Station_LaserV_Lambda Corp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -2134,7 +2069,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: Station_LaserV_Faction_TEF
+      value: Station_LaserV_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -2231,7 +2166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8167535282101586739, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
       propertyPath: m_Name
-      value: FactionThePodShop
+      value: Faction_Pod Shop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
@@ -2512,7 +2447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_Name
-      value: Cargo_Container
+      value: Cargo_Cargo_PlasmaRifles_20
       objectReference: {fileID: 0}
     - target: {fileID: 7856581251997153304, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: Quantity
@@ -2577,7 +2512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_Name
-      value: Cargo_Container
+      value: Cargo_Cargo_PindolanAle_76
       objectReference: {fileID: 0}
     - target: {fileID: 7856581251997153304, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: Quantity
@@ -2703,7 +2638,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: Station_LaserV_Faction_Gat. Rebels
+      value: Station_LaserV_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -2764,7 +2699,7 @@ PrefabInstance:
       objectReference: {fileID: 960234975}
     - target: {fileID: 3760377284931665905, guid: e53c1946b795335479b9561394f4229c, type: 3}
       propertyPath: m_Name
-      value: Station_TradeStation_Faction_Lambda Corp
+      value: Station_TradeStation_Lambda Corp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e53c1946b795335479b9561394f4229c, type: 3}
@@ -2861,7 +2796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8167535282101586739, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
       propertyPath: m_Name
-      value: FactionDSMC
+      value: Faction_DSMC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
@@ -2931,7 +2866,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
       propertyPath: m_Name
-      value: Ship_OrionA_Faction_Gat. Rebels
+      value: Ship_OrionA_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
@@ -2992,7 +2927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: a767540c0710b8c48af2bd8dc111bc0c, type: 3}
       propertyPath: m_Name
-      value: Station_Laboratory
+      value: Abandoned_Station_Laboratory
       objectReference: {fileID: 0}
     - target: {fileID: 6035386738225123759, guid: a767540c0710b8c48af2bd8dc111bc0c, type: 3}
       propertyPath: Quantity
@@ -3057,7 +2992,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: a002b614191ec684c8a6527904280c62, type: 3}
       propertyPath: m_Name
-      value: Station_Refinery_Faction_Gat. Rebels
+      value: Station_Refinery_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a002b614191ec684c8a6527904280c62, type: 3}
@@ -3150,7 +3085,7 @@ GameObject:
   - component: {fileID: 960234976}
   - component: {fileID: 960234975}
   m_Layer: 0
-  m_Name: FactionLambda
+  m_Name: Faction_Lambda Corp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3343,7 +3278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: ba76e83ec7677e644bc64e511a684394, type: 3}
       propertyPath: m_Name
-      value: Ship_FlyerA
+      value: Abandoned_Ship_FlyerA
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba76e83ec7677e644bc64e511a684394, type: 3}
@@ -3692,7 +3627,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: Station_LaserIII_Faction_TEF
+      value: Station_LaserIII_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -3753,7 +3688,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: Station_LaserIII_Faction_Gat. Rebels
+      value: Station_LaserIII_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -3936,7 +3871,7 @@ PrefabInstance:
       objectReference: {fileID: 728340297}
     - target: {fileID: 3760377284931665905, guid: 04ee0eb287e483d4583810eab6839fb3, type: 3}
       propertyPath: m_Name
-      value: Station_HypersleepPodFactory_Faction_The Pod Shop
+      value: Station_HypersleepPodFactory_Pod Shop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04ee0eb287e483d4583810eab6839fb3, type: 3}
@@ -4001,7 +3936,7 @@ PrefabInstance:
       objectReference: {fileID: 1272879044}
     - target: {fileID: 3760377284931665905, guid: 3c8202ea641d5c14d9f981aadae9b7d8, type: 3}
       propertyPath: m_Name
-      value: Station_RepairShop_Faction_TJ
+      value: Station_RepairShop_TJ
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c8202ea641d5c14d9f981aadae9b7d8, type: 3}
@@ -4162,6 +4097,67 @@ Transform:
   m_Father: {fileID: 1884125942}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1237130932
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 758405480}
+    m_Modifications:
+    - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -754.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2033.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: Faction
+      value: 
+      objectReference: {fileID: 1626804947}
+    - target: {fileID: 3760377284931665905, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: m_Name
+      value: Station_MilitaryOutpost_Gat. Rebels
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
 --- !u!1 &1246386233
 GameObject:
   m_ObjectHideFlags: 0
@@ -4264,7 +4260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_Name
-      value: Cargo_Container
+      value: Cargo_Cargo_PlasmaRifles_5
       objectReference: {fileID: 0}
     - target: {fileID: 7856581251997153304, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: Quantity
@@ -4426,7 +4422,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8167535282101586739, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
       propertyPath: m_Name
-      value: FactionTJ
+      value: Faction_TJ
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
@@ -4514,7 +4510,7 @@ GameObject:
   - component: {fileID: 1364118952}
   - component: {fileID: 1364118953}
   m_Layer: 0
-  m_Name: FactionTEF
+  m_Name: Faction_TEF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4627,7 +4623,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: Station_LaserIII_Faction_Gat. Rebels
+      value: Station_LaserIII_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -4826,7 +4822,7 @@ GameObject:
   - component: {fileID: 1626804946}
   - component: {fileID: 1626804947}
   m_Layer: 0
-  m_Name: FactionGatopeanRebels
+  m_Name: Faction_Gat. Rebels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5055,7 +5051,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: m_Name
-      value: Ship_ShuttleA_Faction_TEF
+      value: Ship_ShuttleA_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
@@ -5298,7 +5294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: 5adf2ce541a99fd4d9170fb174323ac0, type: 3}
       propertyPath: m_Name
-      value: Station_StorageLocker
+      value: Abandoned_Station_StorageLocker
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5adf2ce541a99fd4d9170fb174323ac0, type: 3}
@@ -5591,7 +5587,7 @@ PrefabInstance:
       objectReference: {fileID: 728340297}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: Station_LaserIII_Faction_The Pod Shop
+      value: Station_LaserIII_Pod Shop
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -5652,7 +5648,7 @@ PrefabInstance:
       objectReference: {fileID: 1626804947}
     - target: {fileID: 3760377284931665905, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_Name
-      value: Station_LaserIII_Faction_Gat. Rebels
+      value: Station_LaserIII_Gat. Rebels
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
@@ -5965,7 +5961,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: Station_LaserV_Faction_TEF
+      value: Station_LaserV_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -6216,7 +6212,7 @@ PrefabInstance:
       objectReference: {fileID: 1364118953}
     - target: {fileID: 3760377284931665905, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_Name
-      value: Station_LaserV_Faction_TEF
+      value: Station_LaserV_TEF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
@@ -6454,7 +6450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8089889746657418879, guid: 8f94860ff386eb84297faa598c834cfb, type: 3}
       propertyPath: m_Name
-      value: FactionPlayer
+      value: Faction_P1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f94860ff386eb84297faa598c834cfb, type: 3}

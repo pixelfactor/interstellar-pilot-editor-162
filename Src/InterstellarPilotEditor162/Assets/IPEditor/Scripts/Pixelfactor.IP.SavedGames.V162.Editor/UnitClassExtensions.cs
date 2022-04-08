@@ -23,5 +23,10 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Assets.IPEditor.Scripts.Pixelfac
         {
             return unitClass.ToString().StartsWith("Wormhole");
         }
+
+        public static bool IsCargo(this UnitClass unitClass)
+        {
+            return unitClass.ToString().StartsWith("Cargo");
+        }
     }
 }
