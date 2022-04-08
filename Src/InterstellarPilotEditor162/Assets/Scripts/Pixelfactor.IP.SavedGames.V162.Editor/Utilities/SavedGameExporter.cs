@@ -24,9 +24,37 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
             ExportScenarioData(editorSavedGame, savedGame);
             AutoCreateFleetsWhereNeeded(editorSavedGame, savedGame);
             ExportHeader(editorSavedGame, savedGame);
+            SeedFactionIntel(editorSavedGame, savedGame);
 
             return savedGame;
 
+        }
+
+        /// <summary>
+        /// Npc factions rely on the faction intel database. Without it they will have a hard time navigating<br />
+        /// This could be built up in the editor. But because I am lazy, just have all factions discover eachother.
+        /// </summary>
+        /// <param name="editorSavedGame"></param>
+        /// <param name="savedGame"></param>
+        private static void SeedFactionIntel(EditorSavedGame editorSavedGame, SavedGame savedGame)
+        {
+            // Npc factions rely on the faction intel database. Without it they will have a hard time navigating
+            // This could be built up in the editor
+            foreach (var faction in savedGame.Factions)
+            {
+                if (faction.Intel == null)
+                {
+                    faction.Intel = new Model.FactionIntel();
+                }
+
+                foreach (var unit in savedGame.Units)
+                {
+                    if (unit.IsStation() && unit.Faction?.FactionType != FactionType.Bandit)
+                    {
+                        faction.Intel.Units.Add(unit);
+                    }
+                }
+            }
         }
 
         private static void ExportWormholes(EditorSavedGame editorSavedGame, SavedGame savedGame)
@@ -321,13 +349,13 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                         var localSectorPosition = editorUnit.transform.position - editorSector.transform.position;
 
                         // Constrain Y
-                        if (unit.Class.ToString().StartsWith("Ship") || unit.Class.ToString().StartsWith("Station"))
+                        if (unit.IsShipOrStation())
                         {
                             localSectorPosition.y = 0.0f;
                         }
 
                         // HACK: Planets are draw a bit weirdly in the engine with a different camera. Scale down the location position
-                        if (unit.Class.ToString().Contains("Planet"))
+                        if (unit.Class.ToString().StartsWith("Planet"))
                         {
                             localSectorPosition /= 1000.0f;
                         }
@@ -488,6 +516,30 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
                     AdditionalRpProvision = editorFaction.AdditionalRpProvision,
                     TradeIllegalGoods = editorFaction.TradeIllegalGoods,
                 };
+
+                var editorFactionSettings = editorFaction.GetComponentInChildren<EditorFactionCustomSettings>();
+                if (editorFactionSettings != null)
+                {
+                    faction.CustomSettings = new FactionCustomSettings
+                    {
+                        AllowOtherFactionToUseDocks = editorFactionSettings.AllowOtherFactionToUseDocks,
+                        DailyIncome = editorFactionSettings.DailyIncome,
+                        HostileWithAll = editorFactionSettings.HostileWithAll,
+                        IgnoreStationCreditsReserve = editorFactionSettings.IgnoreStationCreditsReserve,
+                        LargeShipPreference = editorFactionSettings.LargeShipPreference,
+                        MinFleetUnitCount = editorFactionSettings.MinFleetUnitCount,
+                        MaxFleetUnitCount = editorFactionSettings.MaxFleetUnitCount,
+                        OffensiveStance = editorFactionSettings.OffensiveStance,
+                        PreferenceToBuildStations = editorFactionSettings.PreferenceToBuildStations,
+                        PreferenceToBuildTurrets =  editorFactionSettings.PreferenceToBuildTurrets,
+                        PreferenceToPlaceBounty = editorFactionSettings.PreferenceToPlaceBounty,
+                        PreferSingleShip = editorFactionSettings.PreferSingleShip,
+                        RepairMinCreditsBeforeRepair = editorFactionSettings.RepairMinCreditsBeforeRepair,
+                        RepairMinHullDamage = editorFactionSettings.RepairMinHullDamage,
+                        RepairShips = editorFactionSettings.RepairShips,
+                        UpgradeShips = editorFactionSettings.UpgradeShips,
+                    };
+                }
 
                 faction.HasCustomName = !string.IsNullOrWhiteSpace(editorFaction.CustomName);
 
