@@ -16,15 +16,38 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
         public static int BASE_ID = 100000;
 
         [MenuItem("IPEditor/Tools/Auto-assign object Ids")]
-        public static void AutoAssignIds()
+        public static void AutoAssignIdsMenuItem()
         {
-            // Find the saved game
-            var editorSavedGame = GameObject.FindObjectOfType<EditorSavedGame>();
-            if (editorSavedGame == null)
-            {
-                Debug.LogError("No editor saved game found"); return;
-            }
+            var editorSavedGame = Util.FindSavedGameOrErrorOut();
 
+            AutoAssignIds(editorSavedGame);
+
+            Debug.Log("Finished auto-assigning ids");
+        }
+
+        [MenuItem("IPEditor/Tools/Clear all Ids")]
+        public static void ClearIdsMenuItem()
+        {
+            var editorSavedGame = Util.FindSavedGameOrErrorOut();
+
+            ClearAllIds(editorSavedGame);
+
+            Debug.Log("Finished clearing ids");
+        }
+
+        [MenuItem("IPEditor/Tools/Reassign all Ids")]
+        public static void ReassignIdsMenuItem()
+        {
+            var editorSavedGame = Util.FindSavedGameOrErrorOut();
+
+            ClearAllIds(editorSavedGame);
+            AutoAssignIds(editorSavedGame);
+
+            Debug.Log("Finished reassigning ids");
+        }
+
+        public static void AutoAssignIds(EditorSavedGame editorSavedGame)
+        {
             var units = editorSavedGame.GetComponentsInChildren<EditorUnit>();
             foreach (var unit in units)
             {
@@ -84,8 +107,51 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                     EditorUtility.SetDirty(order);
                 }
             }
+        }
 
-            Debug.Log("Finished auto-assigned ids");
+        public static void ClearAllIds(EditorSavedGame editorSavedGame)
+        {
+            var units = editorSavedGame.GetComponentsInChildren<EditorUnit>();
+            foreach (var unit in units)
+            {
+                unit.Id = -1;
+                EditorUtility.SetDirty(unit);
+            }
+
+            var factions = editorSavedGame.GetComponentsInChildren<EditorFaction>();
+            foreach (var faction in factions)
+            {
+                faction.Id = -1;
+                EditorUtility.SetDirty(faction);
+            }
+
+            var sectors = editorSavedGame.GetComponentsInChildren<EditorSector>();
+            foreach (var sector in sectors)
+            {
+                sector.Id = -1;
+                EditorUtility.SetDirty(sector);
+            }
+
+            var people = editorSavedGame.GetComponentsInChildren<EditorPerson>();
+            foreach (var person in people)
+            {
+                person.Id = -1;
+                EditorUtility.SetDirty(person);
+            }
+
+            var fleets = editorSavedGame.GetComponentsInChildren<EditorFleet>();
+            foreach (var fleet in fleets)
+            {
+                fleet.Id = -1;
+                EditorUtility.SetDirty(fleet);
+            }
+
+            var orders = editorSavedGame.GetComponentsInChildren<EditorFleetOrderCommon>();
+            foreach (var order in orders)
+            {
+                order.Id = -1;
+                EditorUtility.SetDirty(order);
+            }
         }
 
         private static int NewOrderId(IEnumerable<EditorFleetOrderCommon> orders)

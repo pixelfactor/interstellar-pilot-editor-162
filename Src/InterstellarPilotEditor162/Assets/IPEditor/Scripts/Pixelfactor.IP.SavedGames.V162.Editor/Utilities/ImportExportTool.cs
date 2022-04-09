@@ -6,16 +6,28 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
 {
     public class ImportExportTool : MonoBehaviour
     {
-        [MenuItem("IPEditor/Export/Validate and export")]
-        public static void ValidateAndExport()
+        [MenuItem("IPEditor/Export/Fix, validate and export")]
+        public static void FixUpValidateAndExportMenuItem()
         {
-            // Find the saved game
-            var editorSavedGame = GameObject.FindObjectOfType<EditorSavedGame>();
-            if (editorSavedGame == null)
-            {
-                Debug.LogError("No editor saved game found"); return;
-            }
+            var editorSavedGame = Util.FindSavedGameOrErrorOut();
 
+            FixUpUnitOwnership.SetFleetChildrenToSameFaction(editorSavedGame);
+            FixUpUnitOwnership.SetUnitFactionsToPilotFactions(editorSavedGame);
+            AutoAssignIdsTool.AutoAssignIds(editorSavedGame);
+
+            ValidateAndExport(editorSavedGame);
+        }
+
+        [MenuItem("IPEditor/Export/Validate and export")]
+        public static void ValidateAndExportMenuItem()
+        {
+            var editorSavedGame = Util.FindSavedGameOrErrorOut();
+
+            ValidateAndExport(editorSavedGame);
+        }
+
+        private static void ValidateAndExport(EditorSavedGame editorSavedGame)
+        {
             try
             {
                 Validator.Validate(editorSavedGame, true);

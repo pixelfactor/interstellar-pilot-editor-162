@@ -28,7 +28,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             Debug.Log("Finished set fleet children to same faction");
         }
 
-        private static void SetFleetChildrenToSameFaction(EditorSavedGame editorSavedGame)
+        public static void SetFleetChildrenToSameFaction(EditorSavedGame editorSavedGame)
         {
             foreach (var editorFleet in editorSavedGame.GetComponentsInChildren<EditorFleet>())
             {
@@ -55,7 +55,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             }
         }
 
-        private static void SetUnitFactionsToPilotFactions(EditorSavedGame editorSavedGame)
+        public static void SetUnitFactionsToPilotFactions(EditorSavedGame editorSavedGame)
         {
             foreach (var editorSector in editorSavedGame.GetComponentsInChildren<EditorSector>())
             {

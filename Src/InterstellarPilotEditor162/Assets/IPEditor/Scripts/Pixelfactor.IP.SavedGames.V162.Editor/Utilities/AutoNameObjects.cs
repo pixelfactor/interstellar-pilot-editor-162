@@ -1,5 +1,6 @@
 ﻿using Pixelfactor.IP.SavedGames.V162.Editor.Assets.IPEditor.Scripts.PixelfactorIPSavedGamesV162Editor;
 using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -32,15 +33,42 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
         {
             foreach (var editorFleet in editorSavedGame.GetComponentsInChildren<EditorFleet>())
             {
-                var factionPostfix = "_NoFaction";
-                if (editorFleet.Faction != null)
-                {
-                    factionPostfix = $"_{(editorFleet.Faction != null ? editorFleet.Faction.CustomShortName : "NoFactionName")}";
-                }
-
-                editorFleet.gameObject.name = $"Fleet{factionPostfix}";
+                editorFleet.gameObject.name = GetEditorFleetName(editorFleet, editorSavedGame);
                 EditorUtility.SetDirty(editorFleet);
             }
+        }
+
+        private static string GetEditorFleetName(EditorFleet editorFleet, EditorSavedGame editorSavedGame)
+        {
+            var factionPostfix = "_NoFaction";
+            if (editorFleet.Faction != null)
+            {
+                factionPostfix = $"_{(editorFleet.Faction != null ? editorFleet.Faction.CustomShortName : "NoFactionName")}";
+            }
+
+            var name = GetEditorFleetNameFromContents(editorFleet);
+            return $"Fleet_{name}{factionPostfix}";
+        }
+
+        private static string GetEditorFleetNameFromContents(EditorFleet editorFleet)
+        {
+            var units = editorFleet.GetComponentsInChildren<EditorUnit>();
+            if (units.Length == 0)
+            {
+                return "Empty";
+            }
+
+            // Get the most common unit
+            // TODO: It might be better here to get the most powerful unit
+            var commonUnitGrouping = units.GroupBy(e => e.Class).OrderByDescending(e => e.Count()).First();
+            var name = $"{commonUnitGrouping.First().Class.ToString()}";
+            var count = commonUnitGrouping.Count();
+            if (count > 1)
+            {
+                name += $"x{count}";
+            }
+
+            return name;
         }
 
         private static void AutoNameSectors(EditorSavedGame editorSavedGame)
