@@ -23,6 +23,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             ExportUnits(editorSavedGame, savedGame);
             ExportWormholes(editorSavedGame, savedGame);
             ExportFleets(editorSavedGame, savedGame);
+            AssignFleetDesignations(editorSavedGame, savedGame);
             ExportPeople(editorSavedGame, savedGame);
             ExportPlayer(editorSavedGame, savedGame);
             ExportScenarioData(editorSavedGame, savedGame);
@@ -33,6 +34,30 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
 
             return savedGame;
 
+        }
+
+        /// <summary>
+        /// The 1.6.x has no concept of named fleets, but we can achieve the same effect by overwriting Unit.Name
+        /// </summary>
+        /// <param name="editorSavedGame"></param>
+        /// <param name="savedGame"></param>
+        private static void AssignFleetDesignations(EditorSavedGame editorSavedGame, SavedGame savedGame)
+        {
+            foreach (var editorSector in editorSavedGame.GetComponentsInChildren<EditorSector>())
+            {
+                foreach (var editorFleet in editorSector.GetComponentsInChildren<EditorFleet>())
+                {
+                    if (!string.IsNullOrWhiteSpace(editorFleet.Designation))
+                    { 
+                        var editorUnits = editorFleet.GetComponentsInChildren<EditorUnit>();
+                        foreach (var editorUnit in editorUnits)
+                        {
+                            var unit = savedGame.Units.Single(e => e.Id == editorUnit.Id);
+                            unit.Name = editorFleet.Designation;
+                        }
+                    }
+                }
+            }
         }
 
         private static void ExportFleets(EditorSavedGame editorSavedGame, SavedGame savedGame)
@@ -385,7 +410,10 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                         person.CurrentUnit.ComponentUnitData.People.Add(person);
                     }
 
-                    if (editorComponentUnit != null && editorComponentUnit.Pilot == editorPerson)
+                    // For reasons of laziness, if a pilot is in a ship, just set it to be the pilot and not require it to be linked.
+                    const bool autoPilot = true;
+
+                    if (editorComponentUnit != null && (editorComponentUnit.Pilot == editorPerson || autoPilot))
                     {
                         if (person.Faction == null)
                         {
@@ -479,7 +507,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                         Class = editorUnit.Class,
                         Faction = savedGame.Factions.FirstOrDefault(e => e.Id == editorUnit.Faction?.Id),
                         RpProvision = editorUnit.RpProvision,
-                        Name = editorUnit.Name,
+                        Name = editorUnit.Name, // Set the unit name here but it may later be overriden
                         Sector = savedGame.Sectors.FirstOrDefault(e => e.Id == editorSector.Id),
                     };
 
@@ -609,6 +637,10 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                 }
 
                 unit.ComponentUnitData.CustomShipName = unit.Name;
+                if (!string.IsNullOrWhiteSpace(unit.Name))
+                {
+                    unit.Name = null;
+                }
             }
         }
 

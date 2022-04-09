@@ -1,4 +1,5 @@
-﻿using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects;
+﻿using Pixelfactor.IP.SavedGames.V162.Editor.Assets.IPEditor.Scripts.PixelfactorIPSavedGamesV162Editor;
+using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects;
 using System.Linq;
 using UnityEngine;
 
@@ -9,8 +10,39 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
         public static void Validate(EditorSavedGame editorSavedGame, bool throwOnError)
         {
             ValidateDuplicateIds(editorSavedGame, throwOnError);
+            ValidateDuplicatePilotNames(editorSavedGame);
+            ValidateDuplicateShipNames(editorSavedGame);
         }
 
+        public static void ValidateDuplicateShipNames(EditorSavedGame editorSavedGame)
+        {
+            var shipGroups = editorSavedGame.GetComponentsInChildren<EditorComponentUnitData>()
+                .Where(e =>
+                {
+                    var unit = e.GetComponentInParent<EditorUnit>();
+                    return unit.Class.IsShipOrStation() && !unit.Class.IsTurret() && !string.IsNullOrWhiteSpace(unit.Name);
+                }).GroupBy(e => e.GetComponentInParent<EditorUnit>().Name).Where(e => e.Count() > 1);
+            foreach (var shipGroup in shipGroups)
+            {
+                foreach (var ship in shipGroup)
+                {
+                    Debug.LogWarning($"Duplicate ship name detected: {ship.GetComponentInParent<EditorUnit>().Name}", ship);
+                }
+            }
+        }
+
+        public static void ValidateDuplicatePilotNames(EditorSavedGame editorSavedGame)
+        {
+            var people = editorSavedGame.GetComponentsInChildren<EditorPerson>()
+                .Where(e => !string.IsNullOrWhiteSpace(e.CustomName)).GroupBy(e => e.CustomName).Where(e => e.Count() > 1);
+            foreach (var personGroup in people)
+            {
+                foreach (var person in personGroup)
+                {
+                    Debug.LogWarning("Duplicate person name detected", person);
+                }
+            }
+        }
         private static void ValidateDuplicateIds(EditorSavedGame editorSavedGame, bool throwOnError)
         {
             ValidateUnitIds(editorSavedGame, throwOnError);

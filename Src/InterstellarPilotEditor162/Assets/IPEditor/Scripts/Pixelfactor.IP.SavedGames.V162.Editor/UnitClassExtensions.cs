@@ -19,6 +19,11 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Assets.IPEditor.Scripts.Pixelfac
             return IsStation(unitClass) || IsShip(unitClass);
         }
 
+        public static bool IsTurret(this UnitClass unitClass)
+        {
+            return unitClass == UnitClass.Station_LaserIII || unitClass == UnitClass.Station_LaserV;
+        }
+
         public static bool IsWormhole(this UnitClass unitClass)
         {
             return unitClass.ToString().StartsWith("Wormhole");

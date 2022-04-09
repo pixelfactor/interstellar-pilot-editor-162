@@ -14,5 +14,10 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
         /// When true the parent faction won't' try to control
         /// </summary>
         public bool ExcludeFromFactionAI;
+
+        /// <summary>
+        /// Use this to give the ships a custom name
+        /// </summary>
+        public string Designation;
     }
 }

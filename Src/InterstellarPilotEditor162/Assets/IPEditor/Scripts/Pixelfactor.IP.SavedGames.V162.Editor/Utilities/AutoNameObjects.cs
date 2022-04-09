@@ -46,6 +46,11 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                 factionPostfix = $"_{(editorFleet.Faction != null ? editorFleet.Faction.CustomShortName : "NoFactionName")}";
             }
 
+            if (!string.IsNullOrWhiteSpace(editorFleet.Designation))
+            {
+                return $"Fleet_{editorFleet.Designation}{factionPostfix}";
+            }
+
             var name = GetEditorFleetNameFromContents(editorFleet);
             return $"Fleet_{name}{factionPostfix}";
         }
