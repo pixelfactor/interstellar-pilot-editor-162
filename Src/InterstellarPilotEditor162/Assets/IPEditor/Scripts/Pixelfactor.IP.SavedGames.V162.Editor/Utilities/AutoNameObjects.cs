@@ -101,6 +101,23 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             }
         }
 
+        public static void AutoNameFactionRelation(EditorFactionRelation editorFactionRelation)
+        {
+            editorFactionRelation.gameObject.name = GetFactionRelationName(editorFactionRelation);
+        }
+
+        public static string GetFactionRelationName(EditorFactionRelation editorFactionRelation)
+        {
+            if (editorFactionRelation.OtherFaction == null)
+            {
+                return "FactionRelation_Invalid";
+            }
+
+            var targetFaction = !string.IsNullOrWhiteSpace(editorFactionRelation.OtherFaction.CustomShortName) ?
+                editorFactionRelation.OtherFaction.CustomShortName : "NoName";
+            return $"FactionRelation_{targetFaction}";
+        }
+
         private static string GetEditorFactionName(EditorFaction editorFaction)
         {
             return $"Faction_{(!string.IsNullOrWhiteSpace(editorFaction.CustomShortName) ? editorFaction.CustomShortName : "NoName")}";

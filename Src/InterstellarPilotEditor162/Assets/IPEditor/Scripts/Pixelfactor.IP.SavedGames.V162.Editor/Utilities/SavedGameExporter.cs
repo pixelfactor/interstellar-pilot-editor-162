@@ -19,6 +19,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             PositionSectorsForEngine(editorSavedGame, savedGame);
             SetSectorMapPositions(editorSavedGame, savedGame);
             ExportFactions(editorSavedGame, savedGame);
+            ExportFactionRelations(editorSavedGame, savedGame);
             ExportUnits(editorSavedGame, savedGame);
             ExportWormholes(editorSavedGame, savedGame);
             ExportFleets(editorSavedGame, savedGame);
@@ -684,6 +685,61 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                 faction.HasCustomName = !string.IsNullOrWhiteSpace(editorFaction.CustomName);
 
                 savedGame.Factions.Add(faction);
+            }
+        }
+
+        public static void ExportFactionRelations(EditorSavedGame editorSavedGame, SavedGame savedGame)
+        {
+            var editorFactions = editorSavedGame.GetComponentsInChildren<EditorFaction>();
+            foreach (var editorFaction in editorFactions)
+            {
+                var editorFactionRelations = editorFaction.GetComponentsInChildren<EditorFactionRelation>();
+                foreach (var editorFactionRelation in editorFactionRelations)
+                {
+                    var faction = savedGame.Factions.Single(e => e.Id == editorFaction.Id);
+
+                    if (faction.Relations == null)
+                    {
+                        faction.Relations = new FactionRelationData();
+                    }
+
+                    if (faction.Opinions == null)
+                    {
+                        faction.Opinions = new FactionOpinionData();
+                    }
+
+                    if (editorFactionRelation.OtherFaction == null)
+                    {
+                        LogAndThrow("Faction relation missing other faction", editorFactionRelation.OtherFaction);
+                    }
+
+                    if (editorFactionRelation.OtherFaction == editorFaction)
+                    {
+                        LogAndThrow("Faction relation points to same faction", editorFactionRelation);
+                    }
+
+                    var otherFaction = savedGame.Factions.Single(e => e.Id == editorFactionRelation.OtherFaction.Id);
+
+                    var factionOpinionDataItem = new FactionOpinionDataItem
+                    {
+                        Opinion = editorFactionRelation.Opinion,
+                        OtherFaction = otherFaction
+                    };
+
+                    faction.Opinions.Items.Add(factionOpinionDataItem);
+
+                    var factionRelationDataItem = new FactionRelationDataItem
+                    {
+                        HostilityEndTime = editorFactionRelation.HostilityEndTime,
+                        Neutrality = editorFactionRelation.Neutrality,
+                        OtherFaction = otherFaction,
+                        PermanentPeace = editorFactionRelation.PermanentPeace,
+                        RecentDamageReceived = editorFactionRelation.RecentDamageReceived,
+                        RestrictHostilityTimeout = editorFactionRelation.RestrictHostilityTimeout
+                    };
+
+                    faction.Relations.Items.Add(factionRelationDataItem);
+                }
             }
         }
     }
