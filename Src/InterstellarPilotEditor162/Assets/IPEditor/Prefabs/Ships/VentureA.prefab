@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6120805623062716392}
+  - {fileID: 4705036040880026479}
   m_Father: {fileID: 1499588013825266274}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 1499588013825266274}
   - component: {fileID: 3585806800839264951}
   m_Layer: 0
-  m_Name: OverlordA
+  m_Name: VentureA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Id: -1
-  Class: 25000
+  Class: 710
   Faction: {fileID: 0}
   RpProvision: 0
   Name: 
@@ -186,65 +186,65 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1001 &158567390624552503
+--- !u!1001 &1696033118624856752
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 2818396943555392176}
     m_Modifications:
-    - target: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8680723256370153899, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
+    - target: {fileID: 8680723256370153899, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
       propertyPath: m_Name
-      value: OverlordCargo
+      value: ShipCargoStandardSmall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
---- !u!4 &6120805623062716392 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
+--- !u!4 &4705036040880026479 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6251594947460254175, guid: 6befbf888d3a17b4e9f45ba0b39837e9, type: 3}
-  m_PrefabInstance: {fileID: 158567390624552503}
+  m_CorrespondingSourceObject: {fileID: 6251594947460254175, guid: 130771c5e18ffb9468a446f2cd1f3e37, type: 3}
+  m_PrefabInstance: {fileID: 1696033118624856752}
   m_PrefabAsset: {fileID: 0}

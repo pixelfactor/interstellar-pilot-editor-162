@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2611520314788254972
+--- !u!1 &6552643693189696545
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4543433059763467334}
-  - component: {fileID: 8673549395066668219}
-  - component: {fileID: 4160264426612059265}
+  - component: {fileID: 2184259999515811693}
+  - component: {fileID: 4585188579328289001}
+  - component: {fileID: 3288609908972116199}
   m_Layer: 0
-  m_Name: SecondWaveWaitOrder
+  m_Name: NpcPilotNoCustomSettings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4543433059763467334
+--- !u!4 &2184259999515811693
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2611520314788254972}
+  m_GameObject: {fileID: 6552643693189696545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,35 +33,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8673549395066668219
+--- !u!114 &4585188579328289001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2611520314788254972}
+  m_GameObject: {fileID: 6552643693189696545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7d47c77edbb60b4c9c8e935b2841e19, type: 3}
+  m_Script: {fileID: 11500000, guid: 7964496d6dfa5a545936c157f91f4b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsMale: 1
   Id: -1
-  CompletionMode: 1
-  AllowCombatInterception: 1
-  CloakPreference: 3
-  MaxJumpDistance: -1
-  AllowTimeout: 0
-  TimeoutTime: 240
---- !u!114 &4160264426612059265
+  CustomName: 
+  Faction: {fileID: 0}
+  Kills: 0
+--- !u!114 &3288609908972116199
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2611520314788254972}
+  m_GameObject: {fileID: 6552643693189696545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b486e1c6bf3520a4e9ebc643c42702f7, type: 3}
+  m_Script: {fileID: 11500000, guid: cc3cdfeb59c5fd148b857a076474f738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitTime: 150
+  AllowUseCloak: 1
+  DestroyWhenNoUnit: 1
+  DestroyWhenNotPilotting: 1

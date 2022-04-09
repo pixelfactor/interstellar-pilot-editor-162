@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CargoClass: 6000
-  Quantity: 2
+  Quantity: 3
 --- !u!1 &3258311382232743562
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CargoClass: 8000
-  Quantity: 5
+  Quantity: 3
 --- !u!1 &4773858658723043802
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CargoClass: 1000
-  Quantity: 3
+  Quantity: 5
 --- !u!1 &8680723256370153899
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6251594947460254175}
   m_Layer: 0
-  m_Name: AresCargo
+  m_Name: OverlordCargo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

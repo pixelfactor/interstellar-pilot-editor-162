@@ -461,6 +461,21 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                         person.NpcPilot.Fleet = fleet;
                         person.NpcPilot.Fleet.Npcs.Add(person.NpcPilot);
                     }
+
+                    // Custom settings 
+                    var editorNpcPilotSettings = editorNpcPilot.GetComponentInChildren<EditorNpcPilotSettings>();
+                    if (editorNpcPilotSettings != null)
+                    {
+                        person.NpcPilotSettings = new NpcPilotSettings
+                        {
+                            CheatAmmo = editorNpcPilotSettings.CheatAmmo,
+                            CombatEfficiency = editorNpcPilotSettings.CombatEfficiency,
+                            EnterCombatCloakedProbability = editorNpcPilotSettings.EnterCombatCloakedProbability,
+                            RestrictedWeaponPreference = editorNpcPilotSettings.RestrictedWeaponPreference,
+                            UseCloakPreference = editorNpcPilotSettings.UseCloakPreference,
+                            UsesCloak = editorNpcPilotSettings.UsesCloak,
+                        };
+                    }
                 }
 
                 savedGame.People.Add(person);
@@ -609,39 +624,67 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                     unit.ComponentUnitData.ShipNameIndex = Random.Range(0, maxShipNames);
                 }
 
-                var editorCargoDataItmes = editorComponentData.GetComponentsInChildren<EditorComponentUnitCargoDataItem>();
-                if (editorCargoDataItmes.Length > 0)
-                {
-                    unit.ComponentUnitData.CargoData = new ComponentUnitCargoData();
-                    foreach (var item in editorCargoDataItmes)
-                    {
-                        if (!System.Enum.IsDefined(typeof(CargoClass), item.CargoClass))
-                        {
-                            LogAndThrow("Unknown cargo type", item);
-                        }
-
-                        if (item.Quantity < 0)
-                        {
-                            LogAndThrow("Invalid cargo quantity", item);
-                        }
-
-                        if (item.Quantity > 0)
-                        {
-                            unit.ComponentUnitData.CargoData.Items.Add(new ComponentUnitCargoDataItem
-                            {
-                                CargoClass = item.CargoClass,
-                                Quantity = item.Quantity
-                            });
-                        }
-                    }
-                }
+                ExportComponentUnitCargo(unit, editorComponentData);
+                ExportComponentUnitMods(unit, editorComponentData);
 
                 if (unit.IsShip())
-                { 
+                {
                     unit.ComponentUnitData.CustomShipName = unit.Name;
                     if (!string.IsNullOrWhiteSpace(unit.Name))
                     {
                         unit.Name = null;
+                    }
+                }
+            }
+        }
+
+        private static void ExportComponentUnitMods(Unit unit, EditorComponentUnitData editorComponentData)
+        {
+            var editorComponentBayMods = editorComponentData.GetComponentsInChildren<EditorComponentBayMod>();
+            if (editorComponentBayMods.Length > 0)
+            {
+                unit.ComponentUnitData.ModData = new ComponentUnitModData();
+                foreach (var editorComponentBayMod in editorComponentBayMods)
+                {
+                    if (!System.Enum.IsDefined(typeof(ComponentClass), editorComponentBayMod.ModdedComponentClass))
+                    {
+                        LogAndThrow("Unknown component type", editorComponentBayMod);
+                    }
+
+                    unit.ComponentUnitData.ModData.Items.Add(new ComponentUnitModDataItem
+                    {
+                        BayId = editorComponentBayMod.BayId,
+                        ComponentClass = editorComponentBayMod.ModdedComponentClass
+                    });
+                }
+            }
+        }
+
+        private static void ExportComponentUnitCargo(Unit unit, EditorComponentUnitData editorComponentData)
+        {
+            var editorCargoDataItmes = editorComponentData.GetComponentsInChildren<EditorComponentUnitCargoDataItem>();
+            if (editorCargoDataItmes.Length > 0)
+            {
+                unit.ComponentUnitData.CargoData = new ComponentUnitCargoData();
+                foreach (var item in editorCargoDataItmes)
+                {
+                    if (!System.Enum.IsDefined(typeof(CargoClass), item.CargoClass))
+                    {
+                        LogAndThrow("Unknown cargo type", item);
+                    }
+
+                    if (item.Quantity < 0)
+                    {
+                        LogAndThrow("Invalid cargo quantity", item);
+                    }
+
+                    if (item.Quantity > 0)
+                    {
+                        unit.ComponentUnitData.CargoData.Items.Add(new ComponentUnitCargoDataItem
+                        {
+                            CargoClass = item.CargoClass,
+                            Quantity = item.Quantity
+                        });
                     }
                 }
             }

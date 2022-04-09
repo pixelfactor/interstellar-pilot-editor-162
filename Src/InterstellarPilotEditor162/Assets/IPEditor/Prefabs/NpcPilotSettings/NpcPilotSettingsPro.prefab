@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6552643693189696545
+--- !u!1 &6068020612975583367
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2184259999515811693}
-  - component: {fileID: 4585188579328289001}
-  - component: {fileID: 3288609908972116199}
+  - component: {fileID: 6203563166264880233}
+  - component: {fileID: 693830961272032894}
   m_Layer: 0
-  m_Name: NpcPilot
+  m_Name: NpcPilotSettingsPro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2184259999515811693
+--- !u!4 &6203563166264880233
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6552643693189696545}
+  m_GameObject: {fileID: 6068020612975583367}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,35 +32,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4585188579328289001
+--- !u!114 &693830961272032894
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6552643693189696545}
+  m_GameObject: {fileID: 6068020612975583367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7964496d6dfa5a545936c157f91f4b24, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ba8fef58e7b02140a1b86c574062473, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsMale: 1
-  Id: -1
-  CustomName: 
-  Faction: {fileID: 0}
-  Kills: 0
---- !u!114 &3288609908972116199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6552643693189696545}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc3cdfeb59c5fd148b857a076474f738, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AllowUseCloak: 1
-  DestroyWhenNoUnit: 1
-  DestroyWhenNotPilotting: 1
+  UsesCloak: 1
+  UseCloakPreference: 0.5
+  EnterCombatCloakedProbability: 0.5
+  RestrictedWeaponPreference: 0.85
+  CombatEfficiency: 0.9
+  CheatAmmo: 0
