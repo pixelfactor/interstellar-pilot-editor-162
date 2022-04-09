@@ -107,6 +107,16 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                     EditorUtility.SetDirty(order);
                 }
             }
+
+            var messages = editorSavedGame.GetComponentsInChildren<EditorPlayerMessage>();
+            foreach (var message in messages)
+            {
+                if (message.Id < 0)
+                {
+                    message.Id = NewMessageId(messages);
+                    EditorUtility.SetDirty(message);
+                }
+            }
         }
 
         public static void ClearAllIds(EditorSavedGame editorSavedGame)
@@ -152,11 +162,23 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                 order.Id = -1;
                 EditorUtility.SetDirty(order);
             }
+
+            var messages = editorSavedGame.GetComponentsInChildren<EditorPlayerMessage>();
+            foreach (var message in messages)
+            {
+                message.Id = -1;
+                EditorUtility.SetDirty(message);
+            }
         }
 
         private static int NewOrderId(IEnumerable<EditorFleetOrderCommon> orders)
         {
             return Mathf.Max(BASE_ID, orders.Select(e => e.Id).DefaultIfEmpty().Max()) + 1;
+        }
+
+        private static int NewMessageId(IEnumerable<EditorPlayerMessage> messages)
+        {
+            return Mathf.Max(BASE_ID, messages.Select(e => e.Id).DefaultIfEmpty().Max()) + 1;
         }
 
         private static int NewFleetId(IEnumerable<EditorFleet> fleets)

@@ -50,7 +50,7 @@ MonoBehaviour:
   AllowCombatInterception: 1
   CloakPreference: 3
   MaxJumpDistance: -1
-  AllowTimeout: 1
+  AllowTimeout: 0
   TimeoutTime: 240
 --- !u!114 &4160264426612059265
 MonoBehaviour:

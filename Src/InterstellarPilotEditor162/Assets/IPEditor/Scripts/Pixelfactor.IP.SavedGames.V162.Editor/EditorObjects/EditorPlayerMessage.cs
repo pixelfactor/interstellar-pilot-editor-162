@@ -4,7 +4,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
 {
     public class EditorPlayerMessage : MonoBehaviour
     {
-        public int Id;
+        public int Id = -1;
         public double EngineTimeStamp;
         public bool AllowDelete;
         public bool Opened;

@@ -352,7 +352,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                     MessageText = editorMessage.MessageText,
                     Opened = editorMessage.Opened,
                     SenderUnit = savedGame.Units.FirstOrDefault(e => e.Id == editorMessage.SenderUnit?.Id),
-                    SubjectUnit = savedGame.Units.FirstOrDefault(e => e.Id == editorMessage.SenderUnit?.Id),
+                    SubjectUnit = savedGame.Units.FirstOrDefault(e => e.Id == editorMessage.SubjectUnit?.Id),
                     SubjectText = editorMessage.SubjectText,
                     ToText = editorMessage.ToText,
                 };
@@ -636,10 +636,13 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                     }
                 }
 
-                unit.ComponentUnitData.CustomShipName = unit.Name;
-                if (!string.IsNullOrWhiteSpace(unit.Name))
-                {
-                    unit.Name = null;
+                if (unit.IsShip())
+                { 
+                    unit.ComponentUnitData.CustomShipName = unit.Name;
+                    if (!string.IsNullOrWhiteSpace(unit.Name))
+                    {
+                        unit.Name = null;
+                    }
                 }
             }
         }

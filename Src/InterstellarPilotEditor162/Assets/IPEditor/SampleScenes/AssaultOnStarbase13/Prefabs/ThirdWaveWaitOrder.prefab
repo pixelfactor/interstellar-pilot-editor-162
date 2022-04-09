@@ -50,7 +50,7 @@ MonoBehaviour:
   AllowCombatInterception: 1
   CloakPreference: 3
   MaxJumpDistance: -1
-  AllowTimeout: 1
+  AllowTimeout: 0
   TimeoutTime: 240
 --- !u!114 &4160264426612059265
 MonoBehaviour:
@@ -64,4 +64,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b486e1c6bf3520a4e9ebc643c42702f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitTime: 460
+  WaitTime: 220

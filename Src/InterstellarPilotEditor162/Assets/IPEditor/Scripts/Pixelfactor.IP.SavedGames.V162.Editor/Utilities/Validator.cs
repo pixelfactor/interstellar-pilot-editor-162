@@ -45,6 +45,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
         }
         private static void ValidateDuplicateIds(EditorSavedGame editorSavedGame, bool throwOnError)
         {
+            ValidateMessageIds(editorSavedGame, throwOnError);
             ValidateUnitIds(editorSavedGame, throwOnError);
             ValidateFactionIds(editorSavedGame, throwOnError);
             ValidatePersonIds(editorSavedGame, throwOnError);
@@ -55,6 +56,18 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             ValidateDuplicateFactions(editorSavedGame, throwOnError);
             ValidateDuplicatePeople(editorSavedGame, throwOnError);
             ValidateDuplicateUnits(editorSavedGame, throwOnError);
+            ValidateDuplicateMessageIds(editorSavedGame, throwOnError);
+        }
+
+        private static void ValidateMessageIds(EditorSavedGame editorSavedGame, bool throwOnError)
+        {
+            foreach (var message in editorSavedGame.GetComponentsInChildren<EditorPlayerMessage>())
+            {
+                if (message.Id < 0)
+                {
+                    OnError("All messages require a valid (>0) id", message, throwOnError);
+                }
+            }
         }
 
         private static void ValidateFleetIds(EditorSavedGame editorSavedGame, bool throwOnError)
@@ -139,6 +152,16 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             if (duplicates.Any())
             {
                 OnError("Duplicate unit ids found", duplicates.First().First(), throwOnError);
+            }
+        }
+
+        private static void ValidateDuplicateMessageIds(EditorSavedGame editorSavedGame, bool throwOnError)
+        {
+            var units = editorSavedGame.GetComponentsInChildren<EditorPlayerMessage>();
+            var duplicates = units.Where(e => e.Id > -1).GroupBy(e => e.Id).Where(e => e.Count() > 1);
+            if (duplicates.Any())
+            {
+                OnError("Duplicate message ids found", duplicates.First().First(), throwOnError);
             }
         }
 
