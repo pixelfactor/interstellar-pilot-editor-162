@@ -53,7 +53,7 @@ MonoBehaviour:
   Credits: 500000
   Description: 
   IsCivilian: 0
-  FactionType: 0
+  FactionType: 32
   Aggression: 0.5
   Virtue: 0.5
   Greed: 0.5
