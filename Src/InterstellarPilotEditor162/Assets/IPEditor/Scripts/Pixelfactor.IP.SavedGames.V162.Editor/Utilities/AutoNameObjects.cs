@@ -91,10 +91,15 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             {
                 foreach (var editorUnit in editorSector.GetComponentsInChildren<EditorUnit>())
                 {
-                    editorUnit.gameObject.name = GetEditorUnitName(editorUnit);
+                    AutoNameUnit(editorUnit);
                     EditorUtility.SetDirty(editorSector);
                 }
             }
+        }
+
+        public static void AutoNameUnit(EditorUnit editorUnit)
+        {
+            editorUnit.gameObject.name = GetEditorUnitName(editorUnit);
         }
 
         private static void AutoNameFactions(EditorSavedGame editorSavedGame)
@@ -135,14 +140,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                 var wormholeData = editorUnit.GetComponent<EditorUnitWormholeData>();
                 if (wormholeData != null)
                 {
-                    var targetSector = wormholeData.GetActualTargetSector();
-                    var targetSectorName = targetSector?.Name ?? "Nowhere";
-                    if (wormholeData.IsUnstable)
-                    {
-                        return $"UnstableWormhole_To_{targetSectorName}";
-                    }
-
-                    return $"Wormhole_To_{targetSectorName}";
+                    return GetWormholeObjectName(wormholeData);
                 }
 
                 return $"Wormhole_MissingData";
@@ -178,6 +176,23 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             }
 
             return $"{editorUnit.Class.ToString()}";
+        }
+
+        public static void AutoNameWormhole(EditorUnitWormholeData wormholeData)
+        {
+            wormholeData.gameObject.name = GetWormholeObjectName(wormholeData);
+        }
+
+        public static string GetWormholeObjectName(EditorUnitWormholeData wormholeData)
+        {
+            var targetSector = wormholeData.GetActualTargetSector();
+            var targetSectorName = targetSector?.Name ?? "Nowhere";
+            if (wormholeData.IsUnstable)
+            {
+                return $"UnstableWormhole_To_{targetSectorName}";
+            }
+
+            return $"Wormhole_To_{targetSectorName}";
         }
     }
 }

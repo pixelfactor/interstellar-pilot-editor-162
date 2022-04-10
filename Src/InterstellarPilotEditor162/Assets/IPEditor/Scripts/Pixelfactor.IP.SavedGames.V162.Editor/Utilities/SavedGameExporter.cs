@@ -700,7 +700,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
                     ResourceName = editorSector.Resource.ToString(),
                     Name = editorSector.Name,
                     Description = editorSector.Description,
-                    GateDistanceMultiplier = editorSector.GateDistanceMultiplier,
+                    GateDistanceMultiplier = editorSector.WormholeDistanceMultiplier,
                     RandomSeed = editorSector.RandomSeed,
                     BackgroundRotation = editorSector.BackgroundRotation.ToVec3(),
                     LightRotation = editorSector.LightRotation.ToVec3()

@@ -22,7 +22,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
         /// <summary>
         /// Determines the distance of the wormholes from the sector origin. Should be ~1.0
         /// </summary>
-        public float GateDistanceMultiplier = 1.0f;
+        public float WormholeDistanceMultiplier = 1.0f;
 
         /// <summary>
         /// Something to do with the appearance of asteroid clusters
