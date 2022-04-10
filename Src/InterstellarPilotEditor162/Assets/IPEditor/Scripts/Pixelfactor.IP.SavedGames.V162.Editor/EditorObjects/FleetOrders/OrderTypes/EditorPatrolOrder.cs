@@ -19,5 +19,21 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects.FleetOrders.OrderT
         /// Determines if the patrol path circles back to its starting point
         /// </summary>
         public bool IsLoop = false;
+
+        void OnDrawGizmosSelected()
+        {
+            var nodes = this.GetComponentsInChildren<EditorPatrolPathNode>();
+            for (int i = 0; i < nodes.Length - 1; i++)
+            {
+                var node = nodes[i];
+                var nextNode = nodes[i + 1];
+
+                if (node.Target != null && nextNode.Target != null)
+                {
+                    Gizmos.DrawLine(node.Target.transform.position, nextNode.Target.transform.position);
+
+                }
+            }
+        }
     }
 }
