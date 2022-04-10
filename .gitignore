@@ -354,4 +354,5 @@ Src/InterstellarPilotEditor162/Temp/
 Src/InterstellarPilotEditor162/UserSettings/
 Src/InterstellarPilotEditor162/*.csproj
 Src/InterstellarPilotEditor162/*.sln
+Src/InterstellarPilotEditor162/*.dat
 .vsconfig
