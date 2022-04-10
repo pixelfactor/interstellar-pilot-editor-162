@@ -1,7 +1,4 @@
-﻿using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects.Factions;
-using Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects.Factions.Bounty;
-using Pixelfactor.IP.SavedGames.V162.Model;
-using System.Collections.Generic;
+﻿using Pixelfactor.IP.SavedGames.V162.Model;
 using UnityEngine;
 
 namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects

@@ -10,6 +10,11 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
             return new Vector3(v3.X, v3.Y, v3.Z);
         }
 
+        /// <summary>
+        /// Converts Unity Vector3 to Vec3 used by model
+        /// </summary>
+        /// <param name="v3"></param>
+        /// <returns></returns>
         public static Vec3 ToVec3(this Vector3 v3)
         {
             return new Vec3
@@ -20,6 +25,11 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor
             };
         }
 
+        /// <summary>
+        /// Converts Unity Quaternion to Vec4 used by model
+        /// </summary>
+        /// <param name="quaternion"></param>
+        /// <returns></returns>
         public static Vec4 ToVec4(this Quaternion quaternion)
         {
             return new Vec4
