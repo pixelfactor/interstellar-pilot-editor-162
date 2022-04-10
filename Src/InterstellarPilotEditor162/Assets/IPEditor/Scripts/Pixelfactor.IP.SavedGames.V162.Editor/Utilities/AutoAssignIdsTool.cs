@@ -15,7 +15,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
         /// </summary>
         public static int BASE_ID = 100000;
 
-        [MenuItem("IPEditor/Tools/Auto-assign object Ids")]
+        [MenuItem("IPEditor/Tools/Ids/Auto-assign object Ids")]
         public static void AutoAssignIdsMenuItem()
         {
             var editorSavedGame = Util.FindSavedGameOrErrorOut();
@@ -25,7 +25,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             Debug.Log("Finished auto-assigning ids");
         }
 
-        [MenuItem("IPEditor/Tools/Clear all Ids")]
+        [MenuItem("IPEditor/Tools/Ids/Clear all Ids")]
         public static void ClearIdsMenuItem()
         {
             var editorSavedGame = Util.FindSavedGameOrErrorOut();
@@ -35,7 +35,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             Debug.Log("Finished clearing ids");
         }
 
-        [MenuItem("IPEditor/Tools/Reassign all Ids")]
+        [MenuItem("IPEditor/Tools/Ids/Reassign all Ids")]
         public static void ReassignIdsMenuItem()
         {
             var editorSavedGame = Util.FindSavedGameOrErrorOut();

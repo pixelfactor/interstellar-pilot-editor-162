@@ -430,6 +430,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CargoClass: 3220
   Quantity: 6
+--- !u!1 &376133293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 376133295}
+  - component: {fileID: 376133294}
+  m_Layer: 0
+  m_Name: Notes (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &376133294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376133293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6990d2a4fd5924ca7cab248ef5863a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: The easiest way to create wormholes is to select two sectors and use IPEditor->Tools->Sectors->Connect.
+    This will always create two new wormholes. The distance of the wormholes from
+    the sector origin is determined by 'preferred wormhole distance' set on the save
+    game object. Each sector also has a distance multiplier if a sector should be
+    smaller/bigger. When wormholes are selected, a blue line is drawn in the editor
+    to show the connection.   Wormholes can also be positioned and linked manually.
+    The rotation of a wormhole is important and controls which way ships face when
+    exiting.  Do not create disconnected sectors (sectors not connected to the rest
+    of the universe), the engine will struggle with this.
+  CustomScreenOffset: {x: 0, y: 77.8}
+--- !u!4 &376133295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376133293}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 295.02023, y: 614.40265, z: 1121.3092}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &503276849
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +601,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5505798914149961743, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
   m_PrefabInstance: {fileID: 758405479}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &891289273
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891289275}
+  - component: {fileID: 891289274}
+  m_Layer: 0
+  m_Name: Notes (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &891289274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891289273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6990d2a4fd5924ca7cab248ef5863a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: If you have a sector selected in the hierachy, any wormhole connections are
+    show with a blue line to the other sector.
+  CustomScreenOffset: {x: 0, y: 37.52}
+--- !u!4 &891289275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891289273}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 295.02023, y: 614.40265, z: 1121.3092}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,15 +1030,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba6990d2a4fd5924ca7cab248ef5863a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text: The easiest way to create wormholes is to select two sectors and use IPEditor->Tools->Sectors->Connect.
-    This will always create two new wormholes. The distance of the wormholes from
-    the sector origin is determined by 'preferred wormhole distance' set on the save
-    game object. Each sector also has a distance multiplier if a sector should be
-    smaller/bigger. When wormholes are selected, a blue line is drawn in the editor
-    to show the connection.   Wormholes can also be positioned and linked manually.
-    The rotation of a wormhole is important and controls which way ships face when
-    exiting.  Do not create disconnected sectors (sectors not connected to the rest
-    of the universe), the engine will struggle with this.
+  Text: This sample contains two sectors connected by wormholes.
+  CustomScreenOffset: {x: 0, y: 0}
 --- !u!4 &2128336781
 Transform:
   m_ObjectHideFlags: 0

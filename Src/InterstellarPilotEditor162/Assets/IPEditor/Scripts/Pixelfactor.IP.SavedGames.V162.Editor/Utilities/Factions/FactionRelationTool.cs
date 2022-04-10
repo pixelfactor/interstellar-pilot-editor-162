@@ -9,7 +9,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities.Factions
 {
     public class FactionRelationTool
     {
-        [MenuItem("IPEditor/Tools/Factions/Selected factions at permanent war")]
+        [MenuItem("IPEditor/Tools/Factions/Set selected factions at permanent war")]
         public static void SetSelectedFactionsAtPermanentWarMenuItem()
         {
             SetSelectedFactionsAtPermanentWar();
@@ -17,7 +17,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities.Factions
             Debug.Log("Finished setting selected factions at permanent war");
         }
 
-        [MenuItem("IPEditor/Tools/Factions/Selected factions at permanent alliance")]
+        [MenuItem("IPEditor/Tools/Factions/Set selected factions at permanent alliance")]
         public static void SetSelectedFactionsAtPermanentAllianceMenuItem()
         {
             SetSelectedFactionsAtPermanentAlliance();

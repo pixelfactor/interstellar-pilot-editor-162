@@ -3693,6 +3693,55 @@ MonoBehaviour:
   MessageText: This is Gomes, all ships attack that station, now!
   SubjectText: Attack now
   ShowTime: 150
+--- !u!1 &405297237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 405297239}
+  - component: {fileID: 405297238}
+  m_Layer: 0
+  m_Name: Notes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &405297238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405297237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6990d2a4fd5924ca7cab248ef5863a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: This is a more complete scenario made with this Editor project. There are
+    a number of 'Black Sail' fleets which have two stacked orders. The first is a
+    wait order and second an attack order with the target being the TEF trade station.
+    There are 3 different type of wait order timings corresponding to the timings
+    of the three waves of attack.
+--- !u!4 &405297239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 405297237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 295.02023, y: 614.40265, z: 1121.3092}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &419541240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18447,6 +18496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RandomEventsEnabled: 0
+  PreferredWormholeDistance: 2000
 --- !u!1001 &1884167619
 PrefabInstance:
   m_ObjectHideFlags: 0

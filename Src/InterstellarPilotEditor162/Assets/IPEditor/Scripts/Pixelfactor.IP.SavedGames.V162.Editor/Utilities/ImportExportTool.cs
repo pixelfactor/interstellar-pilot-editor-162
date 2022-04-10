@@ -6,22 +6,17 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
 {
     public class ImportExportTool : MonoBehaviour
     {
-        [MenuItem("IPEditor/Export/Fix, validate and export")]
+        [MenuItem("IPEditor/Export/Quick Export")]
         public static void FixUpValidateAndExportMenuItem()
         {
             var editorSavedGame = Util.FindSavedGameOrErrorOut();
 
             FixUpUnitOwnership.SetFleetChildrenToSameFaction(editorSavedGame);
             FixUpUnitOwnership.SetUnitFactionsToPilotFactions(editorSavedGame);
+
+            // Blitz all ids to ensure uniqueness
+            AutoAssignIdsTool.ClearAllIds(editorSavedGame);
             AutoAssignIdsTool.AutoAssignIds(editorSavedGame);
-
-            ValidateAndExport(editorSavedGame);
-        }
-
-        [MenuItem("IPEditor/Export/Validate and export")]
-        public static void ValidateAndExportMenuItem()
-        {
-            var editorSavedGame = Util.FindSavedGameOrErrorOut();
 
             ValidateAndExport(editorSavedGame);
         }
@@ -40,8 +35,8 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
 
             var savedGame = SavedGameExporter.Export(editorSavedGame);
 
-            // TODO: Pick a good name  - check doesn't exist
-            var preferredPath = @"C:\Users\gsdat\AppData\LocalLow\pixelfactor\Interstellar Pilot\SaveGames";
+            // TODO: Move path to settings
+            var preferredPath = @"";
             var fileName = "NewEditorSavedGame.dat";
             var path = Path.Combine(preferredPath, fileName);
 

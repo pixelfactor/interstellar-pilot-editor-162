@@ -6,6 +6,8 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorHelpers
     {
         public string Text;
 
+        public Vector2 CustomScreenOffset = Vector2.zero;
+
         private void OnDrawGizmos()
         {
             UnityEditor.Handles.BeginGUI();
@@ -17,7 +19,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorHelpers
 
             var insetX = 70;
             var insetY = 20;
-            GUI.Label(new Rect(insetX, insetY, Screen.width - (insetX * 2), Screen.height - insetY), this.Text, guiStyle);
+            GUI.Label(new Rect(insetX + CustomScreenOffset.x, insetY + CustomScreenOffset.y, Screen.width - (insetX * 2), Screen.height - insetY), this.Text, guiStyle);
             UnityEditor.Handles.EndGUI();
         }
     }

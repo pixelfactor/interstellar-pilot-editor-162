@@ -176,7 +176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: Id
-      value: -1
+      value: 100022
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: Name
@@ -185,7 +185,7 @@ PrefabInstance:
     - target: {fileID: 3585806800839264951, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: Faction
       value: 
-      objectReference: {fileID: 1364118953}
+      objectReference: {fileID: 5733813827815111819}
     - target: {fileID: 3760377284931665905, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: m_Name
       value: Ship_ShuttleA_TEF
@@ -257,6 +257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeH
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
+      propertyPath: Id
+      value: 100048
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
 --- !u!1001 &87272603
@@ -309,6 +313,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
+      propertyPath: Id
+      value: 100072
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: Faction
@@ -372,6 +380,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
+      propertyPath: Id
+      value: 100029
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: Faction
       value: 
       objectReference: {fileID: 1364118953}
@@ -431,6 +443,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: f01094292f16d5b44b480e268ccd88f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: f01094292f16d5b44b480e268ccd88f9, type: 3}
+      propertyPath: Id
+      value: 100018
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: f01094292f16d5b44b480e268ccd88f9, type: 3}
       propertyPath: Faction
@@ -532,6 +548,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
+      propertyPath: Id
+      value: 100059
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: Faction
       value: 
       objectReference: {fileID: 1626804947}
@@ -599,6 +619,10 @@ PrefabInstance:
     - target: {fileID: 4656951364488765979, guid: 51e8450728973704d9c77e5206950a74, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5033624439146972838, guid: 51e8450728973704d9c77e5206950a74, type: 3}
+      propertyPath: Id
+      value: 100039
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8450728973704d9c77e5206950a74, type: 3}
@@ -729,6 +753,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2009688727}
     - target: {fileID: 3585806800839264951, guid: eedd89d70a31f84439354ade36e52c0d, type: 3}
+      propertyPath: Id
+      value: 100071
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: eedd89d70a31f84439354ade36e52c0d, type: 3}
       propertyPath: Faction
       value: 
       objectReference: {fileID: 1272879044}
@@ -797,6 +825,10 @@ PrefabInstance:
     - target: {fileID: 8813697111012170827, guid: b6ef81efc6fb95d43a8a099a28ff378d, type: 3}
       propertyPath: m_Name
       value: Planet_JupitersCousin
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914060074567719434, guid: b6ef81efc6fb95d43a8a099a28ff378d, type: 3}
+      propertyPath: Id
+      value: 100067
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6ef81efc6fb95d43a8a099a28ff378d, type: 3}
@@ -887,6 +919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeH
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
+      propertyPath: Id
+      value: 100045
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
 --- !u!1001 &339292469
@@ -939,6 +975,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 3d632c927b195004780775b3c31513cc, type: 3}
+      propertyPath: Id
+      value: 100025
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_Name
@@ -1011,6 +1051,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
+      propertyPath: Id
+      value: 100064
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
       propertyPath: Name
@@ -1124,6 +1168,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
+      propertyPath: Id
+      value: 100020
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: Faction
       value: 
       objectReference: {fileID: 960234975}
@@ -1140,6 +1188,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1226813276}
     m_Modifications:
+    - target: {fileID: 4599161615274450661, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
+      propertyPath: Id
+      value: 100003
+      objectReference: {fileID: 0}
     - target: {fileID: 4599161615274450661, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
       propertyPath: Name
       value: Beta Pindola
@@ -1255,6 +1307,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: Id
+      value: 100023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
       propertyPath: Faction
       value: 
       objectReference: {fileID: 1364118953}
@@ -1327,6 +1383,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5033624439146972838, guid: 51e8450728973704d9c77e5206950a74, type: 3}
+      propertyPath: Id
+      value: 100009
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8450728973704d9c77e5206950a74, type: 3}
 --- !u!4 &473645278 stripped
@@ -1364,7 +1424,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1007941720}
-  - {fileID: 1941909370}
   m_Father: {fileID: 1884125942}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1436,6 +1495,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100005
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1001 &616822963
@@ -1492,6 +1555,10 @@ PrefabInstance:
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
       value: Asteroid_TypeA
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100037
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -1550,6 +1617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeH
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
+      propertyPath: Id
+      value: 100051
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
 --- !u!1001 &653528461
@@ -1602,6 +1673,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
+      propertyPath: Id
+      value: 100027
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: Faction
@@ -1663,6 +1738,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
+      propertyPath: Id
+      value: 100058
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: Faction
@@ -1729,6 +1808,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100011
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1001 &684751674
@@ -1784,7 +1867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: a002b614191ec684c8a6527904280c62, type: 3}
       propertyPath: Id
-      value: -1
+      value: 100026
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: a002b614191ec684c8a6527904280c62, type: 3}
       propertyPath: Faction
@@ -1848,6 +1931,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
+      propertyPath: Id
+      value: 100066
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: Faction
       value: 
       objectReference: {fileID: 728340297}
@@ -1907,6 +1994,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
+      propertyPath: Id
+      value: 100019
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: Faction
@@ -2064,6 +2155,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
+      propertyPath: Id
+      value: 100031
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: Faction
       value: 
       objectReference: {fileID: 1364118953}
@@ -2080,6 +2175,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 215810543}
     m_Modifications:
+    - target: {fileID: 1653622243463373397, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
+      propertyPath: Id
+      value: 100011
+      objectReference: {fileID: 0}
     - target: {fileID: 1653622243463373397, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
       propertyPath: Greed
       value: 0.5
@@ -2249,6 +2348,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5033624439146972838, guid: 51e8450728973704d9c77e5206950a74, type: 3}
+      propertyPath: Id
+      value: 100003
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8450728973704d9c77e5206950a74, type: 3}
 --- !u!4 &740446822 stripped
@@ -2263,6 +2366,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1226813276}
     m_Modifications:
+    - target: {fileID: 4599161615274450661, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
+      propertyPath: Id
+      value: 100004
+      objectReference: {fileID: 0}
     - target: {fileID: 4599161615274450661, guid: 18c904d7d145fc74da3690f62f5577d8, type: 3}
       propertyPath: Name
       value: Gatopea
@@ -2373,6 +2480,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 3d632c927b195004780775b3c31513cc, type: 3}
+      propertyPath: Id
+      value: 100015
+      objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_Name
       value: Wormhole_To_Dymapa 753
@@ -2445,6 +2556,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: e3d5e233ae1277041917bb8486295761, type: 3}
+      propertyPath: Id
+      value: 100052
+      objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_Name
       value: Cargo_Cargo_PlasmaRifles_20
@@ -2509,6 +2624,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: e3d5e233ae1277041917bb8486295761, type: 3}
+      propertyPath: Id
+      value: 100021
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_Name
@@ -2579,6 +2698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100041
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1001 &865727100
@@ -2631,6 +2754,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
+      propertyPath: Id
+      value: 100057
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: Faction
@@ -2694,6 +2821,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: e53c1946b795335479b9561394f4229c, type: 3}
+      propertyPath: Id
+      value: 100017
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: e53c1946b795335479b9561394f4229c, type: 3}
       propertyPath: Faction
       value: 
       objectReference: {fileID: 960234975}
@@ -2710,6 +2841,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 215810543}
     m_Modifications:
+    - target: {fileID: 1653622243463373397, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
+      propertyPath: Id
+      value: 100010
+      objectReference: {fileID: 0}
     - target: {fileID: 1653622243463373397, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
       propertyPath: Greed
       value: 0.8
@@ -2857,6 +2992,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
+      propertyPath: Id
+      value: 100063
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 1583795112d4be442a6e5f4c36ffceda, type: 3}
       propertyPath: Name
       value: Jackal
       objectReference: {fileID: 0}
@@ -2925,6 +3064,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: a767540c0710b8c48af2bd8dc111bc0c, type: 3}
+      propertyPath: Id
+      value: 100068
+      objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: a767540c0710b8c48af2bd8dc111bc0c, type: 3}
       propertyPath: m_Name
       value: Abandoned_Station_Laboratory
@@ -2985,6 +3128,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: a002b614191ec684c8a6527904280c62, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: a002b614191ec684c8a6527904280c62, type: 3}
+      propertyPath: Id
+      value: 100056
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: a002b614191ec684c8a6527904280c62, type: 3}
       propertyPath: Faction
@@ -3276,6 +3423,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: ba76e83ec7677e644bc64e511a684394, type: 3}
+      propertyPath: Id
+      value: 100055
+      objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: ba76e83ec7677e644bc64e511a684394, type: 3}
       propertyPath: m_Name
       value: Abandoned_Ship_FlyerA
@@ -3337,6 +3488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100010
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1001 &992715327
@@ -3394,6 +3549,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100007
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1 &1007941719
@@ -3423,8 +3582,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1757313322}
+  m_Children: []
   m_Father: {fileID: 503276850}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3491,6 +3649,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5033624439146972838, guid: 51e8450728973704d9c77e5206950a74, type: 3}
+      propertyPath: Id
+      value: 100033
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8450728973704d9c77e5206950a74, type: 3}
 --- !u!4 &1009167541 stripped
@@ -3548,6 +3710,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 3d632c927b195004780775b3c31513cc, type: 3}
+      propertyPath: Id
+      value: 100001
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_Name
@@ -3622,6 +3788,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
+      propertyPath: Id
+      value: 100030
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: Faction
       value: 
       objectReference: {fileID: 1364118953}
@@ -3681,6 +3851,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
+      propertyPath: Id
+      value: 100061
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: Faction
@@ -3747,6 +3921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100034
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1001 &1044734633
@@ -3808,6 +3986,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5033624439146972838, guid: 51e8450728973704d9c77e5206950a74, type: 3}
+      propertyPath: Id
+      value: 100054
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51e8450728973704d9c77e5206950a74, type: 3}
 --- !u!1001 &1063942544
@@ -3860,6 +4042,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 04ee0eb287e483d4583810eab6839fb3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 04ee0eb287e483d4583810eab6839fb3, type: 3}
+      propertyPath: Id
+      value: 100065
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 04ee0eb287e483d4583810eab6839fb3, type: 3}
       propertyPath: Name
@@ -3925,6 +4111,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 3c8202ea641d5c14d9f981aadae9b7d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 3c8202ea641d5c14d9f981aadae9b7d8, type: 3}
+      propertyPath: Id
+      value: 100069
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 3c8202ea641d5c14d9f981aadae9b7d8, type: 3}
       propertyPath: Name
@@ -4061,6 +4251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100008
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1 &1226813275
@@ -4147,6 +4341,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
+      propertyPath: Id
+      value: 100074
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 841d408b3e5c33844b9d8e801fae0c3c, type: 3}
       propertyPath: Faction
@@ -4258,6 +4456,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: e3d5e233ae1277041917bb8486295761, type: 3}
+      propertyPath: Id
+      value: 100053
+      objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: e3d5e233ae1277041917bb8486295761, type: 3}
       propertyPath: m_Name
       value: Cargo_Cargo_PlasmaRifles_5
@@ -4327,6 +4529,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100004
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1001 &1272879043
@@ -4336,6 +4542,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 215810543}
     m_Modifications:
+    - target: {fileID: 1653622243463373397, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
+      propertyPath: Id
+      value: 100012
+      objectReference: {fileID: 0}
     - target: {fileID: 1653622243463373397, guid: b1bac0a1fc998c84e9bcd5eb07dc1449, type: 3}
       propertyPath: Greed
       value: 0.8
@@ -4497,6 +4707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100036
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1 &1364118951
@@ -4616,6 +4830,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
+      propertyPath: Id
+      value: 100062
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: Faction
@@ -4752,6 +4970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100035
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1001 &1496429385
@@ -4808,6 +5030,10 @@ PrefabInstance:
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
       value: Asteroid_TypeA
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100012
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -4933,6 +5159,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5033624439146972838, guid: c7e5df85e9937d24f9fc4cb9b4deab53, type: 3}
+      propertyPath: Id
+      value: 100046
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7e5df85e9937d24f9fc4cb9b4deab53, type: 3}
 --- !u!4 &1646541276 stripped
@@ -5039,7 +5269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: Id
-      value: -1
+      value: 100024
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 5ec907e2d1dcb5d429152a458b678b90, type: 3}
       propertyPath: Name
@@ -5110,6 +5340,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Planet_AlienOrange
       objectReference: {fileID: 0}
+    - target: {fileID: 8914060074567719434, guid: 4a87b9651b4879547aad468f58aef152, type: 3}
+      propertyPath: Id
+      value: 100016
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a87b9651b4879547aad468f58aef152, type: 3}
 --- !u!1001 &1686906585
@@ -5162,6 +5396,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 3d632c927b195004780775b3c31513cc, type: 3}
+      propertyPath: Id
+      value: 100002
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: 3d632c927b195004780775b3c31513cc, type: 3}
       propertyPath: m_Name
@@ -5239,6 +5477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100006
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1001 &1738719035
@@ -5291,6 +5533,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 5adf2ce541a99fd4d9170fb174323ac0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 5adf2ce541a99fd4d9170fb174323ac0, type: 3}
+      propertyPath: Id
+      value: 100073
       objectReference: {fileID: 0}
     - target: {fileID: 3760377284931665905, guid: 5adf2ce541a99fd4d9170fb174323ac0, type: 3}
       propertyPath: m_Name
@@ -5358,9 +5604,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100040
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
---- !u!1 &1757313321
+--- !u!1 &1797115233
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5368,54 +5618,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1757313322}
-  - component: {fileID: 1757313323}
+  - component: {fileID: 1797115235}
+  - component: {fileID: 1797115234}
   m_Layer: 0
-  m_Name: PlayerMessage
+  m_Name: Notes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1757313322
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757313321}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1007941720}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1757313323
+--- !u!114 &1797115234
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757313321}
+  m_GameObject: {fileID: 1797115233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f7668cb5776176439f4a3312ede5be9, type: 3}
+  m_Script: {fileID: 11500000, guid: ba6990d2a4fd5924ca7cab248ef5863a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Id: 1
-  EngineTimeStamp: 0
-  AllowDelete: 1
-  Opened: 0
-  SenderUnit: {fileID: 0}
-  SubjectUnit: {fileID: 0}
-  MessageTemplateId: -1
-  ToText: 
-  FromText: Pixelfactor
-  MessageText: This is a test message for the new scenario editor
-  SubjectText: Welcome
-  ShowTime: -1
+  Text: This is a fuller (but massively incomplete) scenario with a universe of multiple
+    sectors and factions.
+--- !u!4 &1797115235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797115233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 295.02023, y: 614.40265, z: 1121.3092}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1801231431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5470,6 +5710,10 @@ PrefabInstance:
     - target: {fileID: 4897587888585231384, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
       propertyPath: m_Name
       value: Asteroid_TypeH
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
+      propertyPath: Id
+      value: 100050
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
@@ -5528,6 +5772,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100014
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1001 &1852606730
@@ -5580,6 +5828,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
+      propertyPath: Id
+      value: 100070
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: Faction
@@ -5641,6 +5893,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
+      propertyPath: Id
+      value: 100060
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: ed4cf13d7060ffb4fb91415c58f720a6, type: 3}
       propertyPath: Faction
@@ -5707,6 +5963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100042
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1 &1884125941
@@ -5756,8 +6016,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f2e99e66bdc3b444aff8e3200f18b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FactionSpawningEnabled: 1
   RandomEventsEnabled: 1
+  PreferredWormholeDistance: 2000
 --- !u!1001 &1894434686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5812,6 +6072,10 @@ PrefabInstance:
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
       value: Asteroid_TypeA
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100013
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -5870,40 +6134,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100043
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
---- !u!1 &1941909369
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1941909370}
-  m_Layer: 0
-  m_Name: DelayedMessages
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1941909370
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1941909369}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2094339485}
-  m_Father: {fileID: 503276850}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1958367455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5954,6 +6190,10 @@ PrefabInstance:
     - target: {fileID: 1499588013825266274, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
+      propertyPath: Id
+      value: 100032
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: Faction
@@ -6020,6 +6260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeA
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100044
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
 --- !u!1001 &2009688726
@@ -6072,6 +6316,10 @@ PrefabInstance:
     - target: {fileID: 2184259999515811693, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585188579328289001, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
+      propertyPath: Id
+      value: 100002
       objectReference: {fileID: 0}
     - target: {fileID: 4585188579328289001, guid: e9e6fd58bebc1fa46b68928085f61544, type: 3}
       propertyPath: Faction
@@ -6153,6 +6401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeH
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
+      propertyPath: Id
+      value: 100047
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
 --- !u!1001 &2067884967
@@ -6207,6 +6459,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
+      propertyPath: Id
+      value: 100028
+      objectReference: {fileID: 0}
+    - target: {fileID: 3585806800839264951, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
       propertyPath: Faction
       value: 
       objectReference: {fileID: 1364118953}
@@ -6216,62 +6472,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 459856ce011349e4385dea54c5dfb4a9, type: 3}
---- !u!1 &2094339484
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2094339485}
-  - component: {fileID: 2094339486}
-  m_Layer: 0
-  m_Name: Message
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2094339485
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094339484}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1941909370}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2094339486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094339484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f7668cb5776176439f4a3312ede5be9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Id: 2
-  EngineTimeStamp: 0
-  AllowDelete: 0
-  Opened: 0
-  SenderUnit: {fileID: 0}
-  SubjectUnit: {fileID: 0}
-  MessageTemplateId: -1
-  ToText: 
-  FromText: Pixelfactor
-  MessageText: Just testing out delayed messagse
-  SubjectText: Hello again
-  ShowTime: 5
 --- !u!1001 &2127733585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6326,6 +6526,10 @@ PrefabInstance:
     - target: {fileID: 4897587888585231384, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
       propertyPath: m_Name
       value: Asteroid_TypeA
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
+      propertyPath: Id
+      value: 100038
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40ed77f865267bd44bb2fa95d6718851, type: 3}
@@ -6384,6 +6588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Asteroid_TypeH
       objectReference: {fileID: 0}
+    - target: {fileID: 6029716177475390603, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
+      propertyPath: Id
+      value: 100049
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1855bd841bdb4c24f99202155560dab2, type: 3}
 --- !u!114 &5733813827815111819 stripped
@@ -6404,6 +6612,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 215810543}
     m_Modifications:
+    - target: {fileID: 1724664696237471513, guid: 8f94860ff386eb84297faa598c834cfb, type: 3}
+      propertyPath: Id
+      value: 100009
+      objectReference: {fileID: 0}
     - target: {fileID: 3467061809229937540, guid: 8f94860ff386eb84297faa598c834cfb, type: 3}
       propertyPath: m_RootOrder
       value: 2

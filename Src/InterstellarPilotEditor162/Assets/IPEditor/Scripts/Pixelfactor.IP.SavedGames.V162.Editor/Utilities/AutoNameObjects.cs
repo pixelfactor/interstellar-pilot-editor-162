@@ -11,7 +11,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
         /// <summary>
         /// 
         /// </summary>
-        [MenuItem("IPEditor/Tools/Auto-name objects")]
+        [MenuItem("IPEditor/Tools/Naming/Auto-name objects")]
         public static void AutoNameAllObjects()
         {
             var editorSavedGame = GameObject.FindObjectOfType<EditorSavedGame>();

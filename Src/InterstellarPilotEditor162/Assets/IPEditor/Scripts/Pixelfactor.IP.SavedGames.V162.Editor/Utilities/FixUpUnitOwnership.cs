@@ -8,7 +8,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
 
     public class FixUpUnitOwnership : MonoBehaviour
     {
-        [MenuItem("IPEditor/Tools/Set unit factions to pilot factions")]
+        [MenuItem("IPEditor/Tools/Units/Set unit factions to pilot factions")]
         public static void SetUnitFactionsToPilotFactionsMenuItem()
         {
             var editorSavedGame = Util.FindSavedGameOrErrorOut();
@@ -18,7 +18,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             Debug.Log("Finished set unit factions to pilot factions");
         }
 
-        [MenuItem("IPEditor/Tools/Set fleet children to same faction")]
+        [MenuItem("IPEditor/Tools/Fleets/Set fleet children to same faction")]
         public static void SetFleetChildrenToSameFactionMenuItem()
         {
             var editorSavedGame = Util.FindSavedGameOrErrorOut();
