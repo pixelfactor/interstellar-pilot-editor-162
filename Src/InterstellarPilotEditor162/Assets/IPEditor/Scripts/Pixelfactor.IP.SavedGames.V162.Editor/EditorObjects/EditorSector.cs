@@ -35,5 +35,16 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
         public Vector3 BackgroundRotation;
 
         public Vector3 LightRotation = new Vector3(45.0f, 45.0f, 0.0f);
+
+        void OnDrawGizmosSelected()
+        {
+            if (SelectionHelper.IsSelected(this) || SelectionHelper.IsSelected(this.transform.parent))
+            {
+                GUIStyle style = new GUIStyle();
+                style.fontSize = 18;
+                style.alignment = TextAnchor.MiddleCenter;
+                DrawString.Draw(this.gameObject.name, this.transform.position, Color.blue, style, new Vector3(0.0f, -100.0f, 0.0f));
+            }
+        }
     }
 }

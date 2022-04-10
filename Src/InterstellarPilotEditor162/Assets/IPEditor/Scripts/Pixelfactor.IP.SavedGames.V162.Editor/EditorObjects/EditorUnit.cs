@@ -28,7 +28,10 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
 
         void OnDrawGizmosSelected()
         {
-            DrawString.Draw(this.gameObject.name, this.transform.position, Color.white);
+            if (SelectionHelper.IsSelected(this) || SelectionHelper.IsSelected(this.transform.parent))
+            { 
+                DrawString.Draw(this.gameObject.name, this.transform.position, Color.white);
+            }
         }
     }
 }

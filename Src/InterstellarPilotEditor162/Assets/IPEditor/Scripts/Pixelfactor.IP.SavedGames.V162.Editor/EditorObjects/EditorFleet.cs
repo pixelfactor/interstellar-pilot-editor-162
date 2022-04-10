@@ -19,5 +19,13 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
         /// Use this to give the ships a custom name
         /// </summary>
         public string Designation;
+
+        void OnDrawGizmosSelected()
+        {
+            if (SelectionHelper.IsSelected(this) || SelectionHelper.IsSelected(this.transform.parent) || SelectionHelper.IsSelected(this.transform.parent?.parent))
+            {
+                DrawString.Draw(this.gameObject.name, this.transform.position, Color.white);
+            }
+        }
     }
 }
