@@ -43,7 +43,7 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.EditorObjects
                 GUIStyle style = new GUIStyle();
                 style.fontSize = 18;
                 style.alignment = TextAnchor.MiddleCenter;
-                DrawString.Draw(this.gameObject.name, this.transform.position, Color.blue, style, new Vector3(0.0f, -100.0f, 0.0f));
+                DrawString.Draw(this.gameObject.name, this.transform.position, new Color(0.3f, 0.3f, 1.0f), style, new Vector3(0.0f, -100.0f, 0.0f));
             }
         }
     }
