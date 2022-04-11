@@ -4,7 +4,7 @@ This Unity3D project allows creation of simple scenarios to be played with v1.6.
 
 ## Disclaimer
 Loading modified IP .dat files on your device is done at your own risk. Whilst there is little chance that this editor will create a .dat file that can damage your device, this is still done at your own risk and we (Pixelfactor Ltd) take no responsibility for damage.
-Any .dat files received from third-party sources should be treated with caution. Loading third-party .dat files in IP may cause the application to run in a way that was unintended, for example using more resources or battery power. Third-party .dat files may contain inappropriate material and/or views nor shared by Pixelfactor Ltd.
+Any .dat files received from third-party sources should be treated with caution. Loading third-party .dat files in IP may cause the application to run in a way that was unintended, for example using more resources or battery power. Third-party .dat files may contain inappropriate material and/or views not shared by Pixelfactor Ltd.
 
 ## Quick start
 
