@@ -10,9 +10,12 @@ Any .dat files received from third-party sources should be treated with caution.
 
 - Clone/fork this repo
 - Open the project in Unity3D (only version 2021.2.16f1 has been tested but anything near this version should work)
+- Unity will complain that scripts are broken. Press 'Ignore' (don't enter safe mode). The reason this happens is because the project relies on external libraries delivered via Nuget which won't be in place yet.
+- At the top menu use Nuget -> Restore Packages
+- Close and reopen Unity
 - Open the scene "Assets/IPEditor/SampleScenes/1. EmptySectorWithPlayerSample.unity"
 - Using the IPEditor menu item, select IPEditor->Export->Quick Export
-- The Console should display the location of the exported .dat file
+- The Console will display the location of the exported .dat file
 - The .dat file can then be placed in the location that IP expects. On android this is typically 'Android\data\com.pixelfactor.interstellarpilot\files\SaveGames'
 - Then customize your own start. A fuller scenario exists in "Assets/IPEditor/SampleScenes/AssaultOnStarbase13"
 
