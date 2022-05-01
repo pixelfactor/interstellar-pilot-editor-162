@@ -8,8 +8,9 @@ Any .dat files received from third-party sources should be treated with caution.
 
 ## Quick start
 
+- Download Unity3D if required (https://unity.com/download) - only version 2021.2.16f1 has been tested but anything near this version should work
 - Clone/fork this repo
-- Open the project in Unity3D (only version 2021.2.16f1 has been tested but anything near this version should work)
+- Open the project in Unity
 - Unity will complain that scripts are broken. Press 'Ignore' (don't enter safe mode). The reason this happens is because the project relies on external libraries delivered via Nuget which won't be in place yet.
 - At the top menu use Nuget -> Restore Packages
 - Close and reopen Unity
