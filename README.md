@@ -9,10 +9,10 @@ Any .dat files received from third-party sources should be treated with caution.
 ## Quick start
 
 - Download Unity3D if required (https://unity.com/download) - only version 2021.2.16f1 has been tested but anything near this version should work
-- Clone/fork this repo
+- Clone/fork this repo OR download the zip of the latest version [here](https://github.com/pixelfactor/interstellar-pilot-editor-162/releases/download/v0.1/InterstellarPilotEditor162.zip)
 - Open the project in Unity
 - Unity will complain that scripts are broken. Press 'Ignore' (don't enter safe mode). The reason this happens is because the project relies on external libraries delivered via Nuget which won't be in place yet.
-- At the top menu use Nuget -> Restore Packages
+- At the top menu use Nuget -> Restore Packages (NOTE: Occasionally for some unknown reason the "Nuget" top menu sometimes does not appear - restarting Unity seems to eventually fix this)
 - Close and reopen Unity
 - Open the scene "Assets/IPEditor/SampleScenes/1. EmptySectorWithPlayerSample.unity"
 - Using the IPEditor menu item, select IPEditor->Export->Quick Export
