@@ -14,6 +14,11 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
         public static SavedGame Export(EditorSavedGame editorSavedGame)
         {
             var savedGame = new SavedGame();
+            var options = editorSavedGame.GetComponentInChildren<SavedGameExportOptions>();
+            if (options == null)
+            {
+                options = editorSavedGame.gameObject.AddComponent<SavedGameExportOptions>();
+            }
 
             ExportSectors(editorSavedGame, savedGame);
             PositionSectorsForEngine(editorSavedGame, savedGame);
@@ -28,7 +33,12 @@ namespace Pixelfactor.IP.SavedGames.V162.Editor.Utilities
             ExportPlayer(editorSavedGame, savedGame);
             ExportScenarioData(editorSavedGame, savedGame);
             ExportFleetSpawners(editorSavedGame, savedGame);
-            AutoCreateFleetsWhereNeeded(editorSavedGame, savedGame);
+
+            if (options.AutoCreateFleets)
+            { 
+                AutoCreateFleetsWhereNeeded(editorSavedGame, savedGame);
+            }
+
             ExportHeader(editorSavedGame, savedGame);
             SeedFactionIntel(editorSavedGame, savedGame);
 
